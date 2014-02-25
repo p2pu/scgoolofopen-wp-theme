@@ -31,6 +31,7 @@
 
                 <div class="welcome">
                     Welcome to the School of Open!
+                    
                     <?php echo $heading->post_title; ?>
                 </div>
 
