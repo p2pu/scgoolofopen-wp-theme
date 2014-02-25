@@ -23,11 +23,16 @@
                 'numberposts' => 1
             );
             $heading = get_posts($args);
-            if( $heading ){
-            ?>
-                <div class="eightcol">
 
-                <div class="welcome"><?php echo $heading->post_title; ?></div>
+            if( $heading ){
+                echo $heading->post_title;
+            ?>
+            <div class="eightcol">
+
+                <div class="welcome">
+                    Welcome to the School of Open!
+                    <?php echo $heading->post_title; ?>
+                </div>
 
                 <p><?php echo $heading->post_content; ?></p>
             </div>
