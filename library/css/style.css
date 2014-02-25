@@ -7368,7 +7368,8 @@ POSTS & CONTENT STYLES
   font-family: "arvo", Helvetica, sans-serif;
   font-size: 35px;
   font-weight: bold;
-  text-align: center; }
+  text-align: center;
+  margin: 20px 0; }
 
 .invitation .invitation-list {
   list-style-type: none;

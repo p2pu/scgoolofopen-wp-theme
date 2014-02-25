@@ -22,13 +22,16 @@
                 'post_status' => 'publish',
                 'numberposts' => 1
             );
-            $heading = get_post(44);?>
+            $heading = get_posts($args);
+            if( $heading ){
+            ?>
                 <div class="eightcol">
 
                 <div class="welcome"><?php echo $heading->post_title; ?></div>
 
                 <p><?php echo $heading->post_content; ?></p>
             </div>
+            <?php } ?>
 
         </div>
 
@@ -262,10 +265,22 @@
 
     </div>
 
-    <div class="section-background whitesmoke clearfix">
+    <div class="section-background clearfix">
 
         <div class="wrap clearfix">
-
+            <div class="twelvecol">
+                <h1 class="section-heading"><?php echo _('Training Programs'); ?></h1>
+            </div>
+            <div class="sixcol first">
+                Sed dignissim vulputate metus et posuere. Nullam tincidunt blandit risus, non pulvinar ligula
+                tempor interdum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+                turpis egestas. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus risus
+                nisl, adipiscing vel neque id, pharetra viverra nulla. Vivamus id est porttitor, placerat dui
+                quis, porta risus. Ut bibendum ligula leo, sed pellentesque lectus lobortis nec. Nam euismod
+                lectus sed porta sollicitudin. Nunc fringilla lacinia volutpat. Praesent purus diam, luctus ac
+                semper eget, fringilla sit amet magna. Fusce et elit augue. Aenean euismod sodales augue, vel
+                lobortis lacus bibendum ac. Integer pulvinar tempus est, ac fringilla quam egestas id.
+            </div>
         </div>
     </div>
 
