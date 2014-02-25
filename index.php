@@ -14,13 +14,20 @@
 
             </div>
 
-            <div class="eightcol">
-                <div class="welcome">Welcome to the School of Open!</div>
+            <?php
+            $the_slug = 'welcome-to-the-school-of-open';
+            $args=array(
+                'name' => $the_slug,
+                'post_type' => 'post',
+                'post_status' => 'publish',
+                'numberposts' => 1
+            );
+            $heading = get_post(44);?>
+                <div class="eightcol">
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum,
-                    lorem ut scelerisque cursus, nisi dolor dapibus tellus, nec semper felis eros non dolor.
-                    Cras ac lacus nec ipsum laoreet sagittis sit amet vitae enim.
-                </p>
+                <div class="welcome"><?php echo $heading->post_title; ?></div>
+
+                <p><?php echo $heading->post_content; ?></p>
             </div>
 
         </div>
@@ -191,7 +198,7 @@
 
     <div class="section-background whitesmoke clearfix">
 
-        <div id="inner-content" class="wrap clearfix">
+        <div class="wrap clearfix">
 
             <div class="twelwecol">
 
@@ -253,6 +260,13 @@
 
         </div>
 
+    </div>
+
+    <div class="section-background whitesmoke clearfix">
+
+        <div class="wrap clearfix">
+
+        </div>
     </div>
 
 
