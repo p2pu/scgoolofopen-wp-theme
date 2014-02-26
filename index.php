@@ -9,7 +9,7 @@
 
             <div class="threecol first">
 
-                <img src="<?php echo get_template_directory_uri() ?>/library/images/soo_logo.png"
+                <img src="<?php echo get_template_directory_uri() ?>/library/images/soo-logo-new-260x260.png"
                      alt="SOO Logo"/>
 
             </div>
@@ -22,69 +22,30 @@
                     <div class="welcome">
                         <?php echo the_title(); ?>
                     </div>
+                    <p>&nbsp;</p>
 
                     <p><?php the_content(); ?></p>
                 </div>
 
             <?php endwhile;?>
-
         </div>
 
     </div>
+    <div class="actions-wrapper">
 
-    <div class="section wrap clearfix">
-        <?php $defaults =
-            array(
-                'theme_location' => 'Jumbotrone Menu',
-                'container'       => 'nav',
-                'container_class' => 'actions',
-                'menu_class' => 'invitation-list',
-                'walker' => new Description_Walker
-            );
-        wp_nav_menu($defaults); ?>
+        <div class="section wrap clearfix actions-section">
+            <?php $defaults =
+                array(
+                    'theme_location' => 'Jumbotrone Menu',
+                    'container'       => 'nav',
+                    'container_class' => 'actions',
+                    'menu_class' => 'invitation-list',
+                    'walker' => new Description_Walker
+                );
+            wp_nav_menu($defaults); ?>
 
-        <!--
-        <nav class="actions">
+        </div>
 
-           <?php
-
-            query_posts(array(
-                'post_type' => 'jumbotron_menu',
-                'showposts' => 3
-            ) );?>
-
-            <?php if (have_posts()): ?>
-
-                <ul>
-
-                <?php while (have_posts()) : the_post(); ?>
-
-                    <li class="first <?php echo get_post_meta( get_the_ID(), 'class', true ); ?> fourcol">
-
-                        <div class="clearfix">
-
-                            <h1><?php the_title(); ?></h1>
-
-                            <?php the_post_thumbnail(); ?>
-
-                        </div>
-
-                        <p><?php echo get_the_excerpt(); ?></p>
-
-                        <a href="<?php the_permalink() ?>">
-                            <?php echo __(get_post_meta( get_the_ID(), 'read more link', true )); ?>
-                        </a>
-
-                    </li>
-
-                <?php endwhile;?>
-
-                </ul>
-
-            <?php endif; ?>
-
-        </nav>
-        -->
     </div>
 
     <div class="section-background clearfix">
@@ -94,6 +55,8 @@
             <div id="main" class="sixcol first" role="main">
 
                 <h1 class="section-heading"><?php echo __('News'); ?></h1>
+
+                <?php query_posts('category_name=news'); ?>
 
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -235,17 +198,15 @@
                                 $term_meta = get_option("taxonomy_$t_id");
                                 if (esc_attr($term_meta['community']) == $post->post_name){?>
                                     <li class="first pull-left">
-                                        <div class="thumbnail"
+                                        <a href="<?php echo esc_attr($term_meta['profile']); ?>"
+                                            class="thumbnail" target="_blank"
                                            data-toggle="popover" data-placement="top"
                                            data-content="<?php echo $term->description; ?>"
                                            data-original-title="<?php echo $term->name; ?>"
                                            data-trigger="hover"
                                            data-html="true">
                                             <img src="<?php echo esc_attr($term_meta['image']) ? esc_attr($term_meta['image']) : 'http://placehold.it/100x100'; ?>" alt=""/>
-                                            <a href="<?php echo esc_attr($term_meta['profile'])?>">
-                                                <?php echo $term->name; ?>
-                                            </a>
-                                        </div>
+                                        </a>
                                     </li><?php
                                 }
                             }?>
@@ -260,7 +221,7 @@
 
     </div>
 
-    <div class="section-background clearfix">
+    <div id="workshops" class="section-background white clearfix">
 
         <div class="wrap clearfix">
             <div class="twelvecol">

@@ -16,10 +16,10 @@ GENERAL STYLES
 *********************/
 
 body {
-	font-family: $sans-serif;
-	font-size: 100%;
-	line-height: 1.8;
-	color: #565656;
+  font-family: $sans-serif;
+  font-size: 100%;
+  line-height: 1.8;
+  color: #565656;
 }
 
 /********************
@@ -27,56 +27,167 @@ WORDPRESS BODY CLASSES
 style a page via class
 ********************/
 
-.rtl {}                           /* for sites that are read right to left (i.e. hebrew) */
-.home {}                          /* home page */
-.blog {}                          /* blog template page */
-.archive {}                       /* archive page */
-.date {}                          /* date archive page */
-	.date-paged-1 {}                /* replace the number to the corresponding page number */
-.search {}                        /* search page */
-	.search-results {}              /* search result page */
-	.search-no-results {}           /* no results search page */
-	.search-paged-1 {}              /* individual paged search (i.e. body.search-paged-3) */
-.error404 {}                      /* 404 page */
-.single {}                        /* single post page */
-	.postid-1 {}                    /* individual post page by id (i.e. body.postid-73) */
-	.single-paged-1 {}              /* individual paged single (i.e. body.single-paged-3) */
-.attachment {}                    /* attatchment page */
-	.attachmentid-1 {}              /* individual attatchment page (i.e. body.attachmentid-763) */
-	.attachment-mime-type {}        /* style mime type pages */
-.author {}                        /* author page */
-	.author-nicename {}             /* user nicename (i.e. body.author-samueladams) */
-	.author-paged-1 {}              /* paged author archives (i.e. body.author-paged-4) for page 4 */
-.category {}                      /* category page */
-	.category-1 {}                  /* individual category page (i.e. body.category-6) */
-	.category-paged-1 {}            /* replace the number to the corresponding page number */
-.tag {}                           /* tag page */
-	.tag-slug {}                    /* individual tag page (i.e. body.tag-news) */
-	.tag-paged-1 {}                 /* replace the number to the corresponding page number */
-.page-template {}                 /* custom page template page */
-	.page-template-page-php {}      /* individual page template (i.e. body.page-template-contact-php */
-	.page-paged-1 {}                /* replace the number to the corresponding page number */
-	.page-parent {}                 /* parent page template */
-	.page-child {}                  /* child page template */
-	.parent-pageid-1 {}             /* replace the number to the corresponding page number */
-.logged-in {}                     /* if user is logged in */
-.paged {}                         /* paged items like search results or archives */
-	.paged-1 {}                     /* individual paged (i.e. body.paged-3) */
-.thumbnail{
-    width: 100px;
-    background-color: $white;
-    margin-right: 15px;
-    height: 170px;
+.rtl {
 }
-.left{ float: left; }
-.right{ float: right; }
+
+/* for sites that are read right to left (i.e. hebrew) */
+.home {
+}
+
+/* home page */
+.blog {
+}
+
+/* blog template page */
+.archive {
+}
+
+/* archive page */
+.date {
+}
+
+/* date archive page */
+.date-paged-1 {
+}
+
+/* replace the number to the corresponding page number */
+.search {
+}
+
+/* search page */
+.search-results {
+}
+
+/* search result page */
+.search-no-results {
+}
+
+/* no results search page */
+.search-paged-1 {
+}
+
+/* individual paged search (i.e. body.search-paged-3) */
+.error404 {
+}
+
+/* 404 page */
+.single {
+}
+
+/* single post page */
+.postid-1 {
+}
+
+/* individual post page by id (i.e. body.postid-73) */
+.single-paged-1 {
+}
+
+/* individual paged single (i.e. body.single-paged-3) */
+.attachment {
+}
+
+/* attatchment page */
+.attachmentid-1 {
+}
+
+/* individual attatchment page (i.e. body.attachmentid-763) */
+.attachment-mime-type {
+}
+
+/* style mime type pages */
+.author {
+}
+
+/* author page */
+.author-nicename {
+}
+
+/* user nicename (i.e. body.author-samueladams) */
+.author-paged-1 {
+}
+
+/* paged author archives (i.e. body.author-paged-4) for page 4 */
+.category {
+}
+
+/* category page */
+.category-1 {
+}
+
+/* individual category page (i.e. body.category-6) */
+.category-paged-1 {
+}
+
+/* replace the number to the corresponding page number */
+.tag {
+}
+
+/* tag page */
+.tag-slug {
+}
+
+/* individual tag page (i.e. body.tag-news) */
+.tag-paged-1 {
+}
+
+/* replace the number to the corresponding page number */
+.page-template {
+}
+
+/* custom page template page */
+.page-template-page-php {
+}
+
+/* individual page template (i.e. body.page-template-contact-php */
+.page-paged-1 {
+}
+
+/* replace the number to the corresponding page number */
+.page-parent {
+}
+
+/* parent page template */
+.page-child {
+}
+
+/* child page template */
+.parent-pageid-1 {
+}
+
+/* replace the number to the corresponding page number */
+.logged-in {
+}
+
+/* if user is logged in */
+.paged {
+}
+
+/* paged items like search results or archives */
+.paged-1 {
+}
+
+/* individual paged (i.e. body.paged-3) */
+.thumbnail {
+  width: 100px;
+  background-color: $white;
+  margin-right: 15px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
 /*********************
 LAYOUT & GRID STYLES
 *********************/
 
 .wrap {
-	width: 96%;
-	margin: 0 auto;
+  width: 96%;
+  margin: 0 auto;
 }
 
 /*********************
@@ -84,27 +195,27 @@ LINK STYLES
 *********************/
 
 a, a:visited {
-	color: $link-color;
+  color: $link-color;
 
-	/* on hover */
-	&:hover, &:focus {
-		color: $link-hover;
-	}
+  /* on hover */
+  &:hover, &:focus {
+    color: $link-hover;
+  }
 
-	/* on click */
-	&:active {
+  /* on click */
+  &:active {
 
-	}
+  }
 
-	/* mobile tap color */
-	&:link {
-		/*
-		this highlights links on iPhones/iPads.
-		so it basically works like the :hover selector
-		for mobile devices.
-		*/
-		-webkit-tap-highlight-color : rgba( 0, 0, 0, 0.3 );
-	}
+  /* mobile tap color */
+  &:link {
+    /*
+    this highlights links on iPhones/iPads.
+    so it basically works like the :hover selector
+    for mobile devices.
+    */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 /******************************************************************
@@ -112,150 +223,165 @@ H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-	font-family: $sans-serif;
-	text-rendering: optimizelegibility;
-	font-weight: 500;
-	/*
-	if you're going to use webfonts, be sure to check your weights
-	http://css-tricks.com/watch-your-font-weight/
-	*/
+  font-family: $sans-serif;
+  text-rendering: optimizelegibility;
+  font-weight: 500;
+  /*
+  if you're going to use webfonts, be sure to check your weights
+  http://css-tricks.com/watch-your-font-weight/
+  */
 
-	/* removing text decoration from all headline links */
-	a {
-		text-decoration: none;
-	}
+  /* removing text decoration from all headline links */
+  a {
+    text-decoration: none;
+  }
 }
 
 h1, .h1 {
-	font-size: 2.5em;
-	line-height: 1.333em;
+  font-size: 2.5em;
+  line-height: 1.333em;
 }
 
 h2, .h2 {
-	font-size: 1.75em;
-	line-height: 1.4em;
-	margin-bottom: 0.375em;
+  font-size: 1.75em;
+  line-height: 1.4em;
+  margin-bottom: 0.375em;
 }
 
 h3, .h3 {
-	font-size: 1.125em;
+  font-size: 1.125em;
 }
 
 h4, .h4 {
-	font-size: 1.1em;
-	font-weight: 700;
+  font-size: 1.1em;
+  font-weight: 700;
 }
 
 h5, .h5 {
-	font-size: 0.846em;
-	line-height: 2.09em;
-	text-transform: uppercase;
-	letter-spacing: 2px;
+  font-size: 0.846em;
+  line-height: 2.09em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
+
 /******************************************************************
 INPUT STYLES
 ******************************************************************/
 
 input[type="text"] {
-    height: 37px;
+  height: 37px;
 }
 
 /******************************************************************
 LIST STYLES
 ******************************************************************/
 
-
 /*********************
 HEADER STYLES
 *********************/
 .p2pu-color-divider-wrap {
-    border-bottom: solid 6px #ff7300;
-    &::before, &::after {
-        content: "";
-        height: 6px;
-        width: 25%;
-        position: absolute;
-        left: 25%;
-        background: #b7d500;
-    }
+  border-bottom: solid 6px #ff7300;
+  &::before, &::after {
+    content: "";
+    height: 6px;
+    width: 25%;
+    position: absolute;
+    left: 25%;
+    background: #b7d500;
+  }
 }
 
-.p2pu-color-divider{
-    &::before, &::after {
-      content: "";
-      height: 6px;
-      width: 25%;
-      position: absolute;
-      left: 50%;
-      background: #05c6b4;
-    }
+.p2pu-color-divider {
+  &::before, &::after {
+    content: "";
+    height: 6px;
+    width: 25%;
+    position: absolute;
+    left: 50%;
+    background: #05c6b4;
+  }
 
-    ::after {
-      left: 75%;
-      background: #ffbc1a;
-    }
+  ::after {
+    left: 75%;
+    background: #ffbc1a;
+  }
 }
 
-.header {}
+.header {
+}
 
-	#logo {}
+#logo {
+}
 
 .navbar {
-    .navbar-inner {
-        padding: 0 25px;
-    }
+  .navbar-inner {
+    padding: 0 25px;
+  }
 
-    .nav{
-      margin-top: 15px;
-    }
+  .nav {
+    margin-top: 11px;
+  }
 
-    .brand{
-      background-image: url("../images/logo-p2pu-menu.png");
-    }
+  .brand {
+    font-family: $baseFontFamily;
+    text-indent: 0;
+    font-size: 25px;
+    margin-top: 8px;
+    width: 25px;
+    height: 45px;
+    margin-bottom: 0;
+    color: #05c6b4;
+  }
 
-    .btn-group {
-       line-height: 30px;
-    }
+  .btn-group {
+    line-height: 30px;
+  }
 
-    .pull-right {
-        margin-top: 0;
-    }
+  .pull-right {
+    margin-top: 5px;
+  }
 
-    .cc-logo {
-      img {
-          width: 200px;
-          height: 47px;
-       }
+  .logo-plus-sign {
+    margin-top: 10px;
+  }
+
+  .cc-logo {
+    img {
+      height: 24px;
     }
-  
+  }
+
 }
 
 .jumbotron {
+  position: relative;
+  background-color: #FFFFFF;
+  width: 100%;
+  padding: 120px 0;
+  color: $slate;
+  margin-top: -5px;
+  background: url("../images/skulls.png") repeat top left;
 
-    background-color: #FFFFFF;
-    width: 100%;
-    padding: 60px 0;
-    color: #333333;
+  .welcome-wrap {
+    width: 70%;
+    float: left;
+  }
 
-    .welcome-wrap {
-        width: 70%;
-        float: left;
-    }
+  .welcome {
+    font-family: $baseFontFamily;
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 50px;
+  }
 
-    .welcome {
-        font-family: $baseFontFamily;
-        font-size: 45px;
-        font-weight: bold;
-    }
+  p {
+    font-size: 21px;
+    line-height: 1.3em;
+  }
 
-    p {
-        font-size: 21px;
-        line-height: 1.3em;
-    }
-
-    .logo-wrap {
-      float: right;
-    }
+  .logo-wrap {
+    float: right;
+  }
 }
 
 /*********************
@@ -271,704 +397,797 @@ and more scalable.
 */
 
 .nav {
-	border-bottom: 0;
+  border-bottom: 0;
 
-	li {
+  li {
 
-		a {
-			display: block;
-			text-decoration: none;
-			padding: 10px 10px;
+    a {
+      display: block;
+      text-decoration: none;
+      padding: 10px 10px;
 
-			/*
-			remember this is for mobile ONLY, so there's no need
-			to even declare hover styles here, you can do it in
-			the style.scss file where it's relevant. We want to
-			keep this file as small as possible!
-			*/
-			&:hover, &:focus {
+      /*
+      remember this is for mobile ONLY, so there's no need
+      to even declare hover styles here, you can do it in
+      the style.scss file where it's relevant. We want to
+      keep this file as small as possible!
+      */
+      &:hover, &:focus {
 
-			}
-		}
+      }
+    }
 
-		&:first-child {}
+    &:first-child {
+    }
 
-		&:last-child {}
+    &:last-child {
+    }
 
-		/*
-		so you really have to rethink your dropdowns for mobile.
-		you don't want to have it expand too much because the
-		screen is so small. How you manage your menu should
-		depend on the project. Here's some great info on it:
-		http://www.alistapart.com/articles/organizing-mobile/
-		*/
-		ul.sub-menu,
-		ul.children {
-            margin-left: 0;
+    /*
+    so you really have to rethink your dropdowns for mobile.
+    you don't want to have it expand too much because the
+    screen is so small. How you manage your menu should
+    depend on the project. Here's some great info on it:
+    http://www.alistapart.com/articles/organizing-mobile/
+    */
+    ul.sub-menu,
+    ul.children {
+      margin-left: 0;
 
-			li {
+      li {
 
-                list-style: none;
+        list-style: none;
 
-				a {
-					padding-left: 30px;
+        a {
+          padding-left: 30px;
 
-					&:hover,
-					&:focus {}
+          &:hover,
+          &:focus {
+          }
 
-					&:link {}
+          &:link {
+          }
 
-				}
+        }
 
-				&:first-child {}
+        &:first-child {
+        }
 
-				&:last-child {}
+        &:last-child {
+        }
 
-			}
+      }
 
-		}
+    }
 
-	} /* end .menu li */
+  }
+  /* end .menu li */
 
-	/* highlight current page */
-	li.current-menu-item,
-	li.current_page_item,
-	li.current-page-ancestor {
+  /* highlight current page */
+  li.current-menu-item,
+  li.current_page_item,
+  li.current-page-ancestor {
 
-		a {}
+    a {
+    }
 
-	}  /* end current highlighters */
+  }
+  /* end current highlighters */
 
-} /* end .nav */
+}
 
-.navbar.logged-in{
+/* end .nav */
+
+.navbar.logged-in {
   top: 30px !important;
 }
+
 .dropdown-menu {
-    position: relative;
-    top: 100%;
-    right: 0;
-    left: initial;
-    z-index: 1000;
-    display: block;
-    width: 100%;
-    float: left;
-    min-width: 160px;
-    padding: 5px;
-    margin: 5px 0 25px 0;
-    list-style: none;
-    background-color: white;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-    -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    -webkit-background-clip: content-box;
-    -moz-background-clip: padding;
-    background-clip: content-box;
+  position: relative;
+  top: 100%;
+  right: 0;
+  left: initial;
+  z-index: 1000;
+  display: block;
+  width: 100%;
+  float: left;
+  min-width: 160px;
+  padding: 5px;
+  margin: 5px 0 25px 0;
+  list-style: none;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  -webkit-background-clip: content-box;
+  -moz-background-clip: padding;
+  background-clip: content-box;
 }
+
 /*********************
 ACTIONS STYLES
 *********************/
+.actions-section {
+  margin-top: -120px;
+  padding-bottom: 100px;
+}
+.actions-wrapper{
+  background-color: $slate;
+}
+
 .actions {
-    margin-top: 15px;
+  margin-top: 15px;
 
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-        width: 100%;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+  }
+  li {
+    height: 350px;
+    margin-left: 20px;
+    border: 1px solid #5F2E7E;
+    position: relative;
+    padding: 10px;
+    background-color: $white;
+
+    &:first-child {
+      margin-left: 0;
     }
-    li {
-        height: 350px;
-        margin-left: 20px;
-        border: 1px solid #5F2E7E;
-        position: relative;
-        padding: 10px;
-        background-color: $white;
-        background-image: url("../images/courses-logo.png");
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
 
-        &:first-child {
-            margin-left: 0;
-        }
+    h1 {
+      font-family: $baseFontFamily;
+      height: 106px;
+    }
 
-        h1 {
-            font-family: $baseFontFamily;
-            float: left;
-        }
+    p {
 
-        p {
-            position: absolute;
-            bottom: 70px;
-        }
+    }
+
+    img {
+
+      float: right;
+      width: 100px;
+    }
+
+    &.workshops {
+
+      border-color: #3D9A33;
+
+      a {
+
+        background-color: #3D9A33;
 
         img {
-
-            float: right;
-            width: 100px;
+          padding-top: 40px;
         }
 
-        &.workshops {
+        &:hover {
+          background-color: #186410;
 
-            border-color: #3D9A33;
-            background-image: url("../images/workshops-logo.png");
-
-            a {
-
-                background-color: #3D9A33;
-
-                img {
-                    padding-top: 40px;
-                }
-
-                &:hover {
-                    background-color: #186410;
-
-                    .logo {
-                        background-image: url("../images/workshops-logo-light.png");
-                    }
-                }
-
-            }
-
+          .logo {
+            background-image: url("../images/workshops-logo-light.png");
+          }
         }
 
-        &.training {
-            border-color: #B93D43;
-            background-image: url("../images/trainings-logo.png");
-
-            a {
-                background-color: #B93D43;
-
-                img {
-                    padding-top: 35px;
-                }
-
-                &:hover {
-                    background-color: #781419;
-                }
-
-            }
-        }
-        a {
-            display: block;
-            color: $white;
-            position: absolute;
-            bottom: 0;
-            background-color: #5F2E7E;
-            padding: 20px;
-            width: 100%;
-            left: 0;
-            text-align: right;
-            @include transition(all 0.5s linear);
-
-            &:hover {
-                background-color: #380F52;
-                color: $white;
-            }
-
-        }
-
+      }
 
     }
 
+    &.training {
+      border-color: #B93D43;
+
+      a {
+        background-color: #B93D43;
+
+        img {
+          padding-top: 35px;
+        }
+
+        &:hover {
+          background-color: #781419;
+        }
+
+      }
+    }
+    a {
+      display: block;
+      color: $white;
+      position: absolute;
+      bottom: 0;
+      background-color: #5F2E7E;
+      padding: 20px;
+      width: 100%;
+      left: 0;
+      text-align: right;
+      @include transition(all 0.5s linear);
+
+      &:hover {
+        background-color: #380F52;
+        color: $white;
+      }
+
+    }
+
+  }
+
 }
+
 /*********************
 POSTS & CONTENT STYLES
 *********************/
 
 .section-background {
 
+  position: relative;
+  background-color: $white;
+  padding: 40px 0 80px 0;
+
+  .wrap {
     position: relative;
-    background-color: $white;
-    padding: 40px 0;
 
-    .wrap{
-        position: relative;
-
-        &:after, &:before {
-            left: 40px;
-            top: -40px;
-            border: solid transparent;
-            content: " ";
-            height: 0;
-            width: 0;
-            position: absolute;
-            pointer-events: none;
-        }
-
-        &:after {
-            border-color: rgba(243, 244, 248, 0);
-            border-top-color: #F3F4F8;
-            border-width: 30px;
-            margin-left: -30px;
-        }
-        &:before {
-            border-color: rgba(0, 0, 0, 0);
-            border-top-color: #F3F4F8;
-            border-width: 36px;
-            margin-left: -36px;
-        }
+    &:after, &:before {
+      left: 40px;
+      top: -40px;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
     }
 
-    &.whitesmoke {
-        background-color: #F3F4F8;
-        .wrap{
-
-            &:after, &:before {
-                border-top-color: $white
-            }
-
-        }
+    &:after {
+      border-color: rgba(243, 244, 248, 0);
+      border-top-color: $slate;
+      border-width: 30px;
+      margin-left: -30px;
     }
+    &:before {
+      border-color: rgba(0, 0, 0, 0);
+      border-top-color: $slate;
+      border-width: 36px;
+      margin-left: -36px;
+    }
+  }
+
+  &.whitesmoke {
+    background-color: #F3F4F8;
+    .wrap {
+
+      &:after, &:before {
+        border-top-color: $white;
+        top: -60px;
+
+      }
+
+    }
+  }
+
+  &.white {
+
+    .wrap {
+
+      &:after, &:before {
+        border-top-color: #F3F4F8;
+
+      }
+
+    }
+  }
 
 }
 
 .section {
-    padding: 30px 0;
+  padding: 50px 0 100px 0;
 
 }
 
 .section-heading {
-    font-family: $baseFontFamily;
-    font-size: 35px;
-    font-weight: bold;
-    text-align: center;
-    margin: 20px 0;
+  font-family: $baseFontFamily;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
 }
 
 .invitation {
 
-    .invitation-list {
-        list-style-type: none;
-        margin: 0;
+  .invitation-list {
+    list-style-type: none;
+    margin: 0;
+  }
+
+  .invitation-button {
+    background-color: $cyan;
+    margin: 20px 0;
+    font-family: $baseFontFamily;
+    color: $white;
+    font-size: 25px;
+    line-height: 60px;
+    text-align: center;
+    float: right;
+    @include transition(all 0.5s linear);
+
+    &.create a {
+      background-image: url("../images/get-involved-create.png");
     }
 
-
-
-    .invitation-button {
-        background-color: $cyan;
-        margin: 20px 0;
-        font-family: $baseFontFamily;
-        color: $white;
-        font-size: 25px;
-        line-height: 60px;
-        text-align: center;
-        float: right;
-        @include transition(all 0.5s linear);
-
-        &.create a{
-            background-image: url("../images/get-involved-create.png");
-        }
-
-        &.involve a{
-            background-image: url("../images/get-involved-involve.png");
-        }
-
-        a {
-            color: $white;
-            display: block;
-            padding: 20px;
-            background-image: url("../images/get-involved-discussion.png");
-            background-position: 35px 50%;
-            background-repeat: no-repeat;
-        }
-
-        &:hover {
-            background-color: darken($cyan, 10%);
-            color: $white;
-        }
+    &.involve a {
+      background-image: url("../images/get-involved-involve.png");
     }
+
+    a {
+      color: $white;
+      display: block;
+      padding: 20px;
+      background-image: url("../images/get-involved-discussion.png");
+      background-position: 35px 50%;
+      background-repeat: no-repeat;
+    }
+
+    &:hover {
+      background-color: darken($cyan, 10%);
+      color: $white;
+    }
+  }
 
 }
 
 #content {
-    position: relative;
-    &::before {
-        background-color: #E7E6E1;
-        height: 100%;
-        content: "";
-        display: block;
-        min-height: 100%;
-        position: absolute !important;
-        margin: 0 !important;
-        top: 0;
-        left: 0;
-        z-index: 0;
-        border-right: 2px solid #ffffff;
-        @extend .threecol;
-    }
+  position: relative;
+  &::before {
+    background-color: #E7E6E1;
+    height: 100%;
+    content: "";
+    display: block;
+    min-height: 100%;
+    position: absolute !important;
+    margin: 0 !important;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    border-right: 2px solid #ffffff;
+    @extend .threecol;
+  }
 
-    &.index {
-        &::before {
-            background: none;
-        }
+  &.index {
+    &::before {
+      background: none;
     }
+  }
 
 }
 
 #main {
-    padding-top: 60px;
-    margin-bottom: 0;
+  padding-top: 60px;
+  margin-bottom: 0;
 }
 
+.hentry {
 
-		.hentry {
+  header {
+  }
 
-			header {}
+  footer {
+  }
 
-			footer {}
+}
 
-		} /* end .hentry */
+/* end .hentry */
 
-		.single-title,
-		.page-title {}
+.single-title,
+.page-title {
+}
 
-		.single-title {}
+.single-title {
+}
 
-		.page-title {}
+.page-title {
+}
 
-		.archive-title { }
+.archive-title {
+}
 
-		/* want to style individual post classes? Booya! */
-		.post-id {}         /* post by id (i.e. post-3) */
-		.post {}            /* general post style */
-		.page {}            /* general article on a page style */
-		.attachment {}      /* general style on an attatchment */
-		.sticky {}          /* sticky post style */
-		.hentry {}          /* hentry class */
-		.category-slug {}   /* style by category (i.e. category-videos) */
-		.tag-slug {}        /* style by tag (i.e. tag-news) */
+/* want to style individual post classes? Booya! */
+.post-id {
+}
 
-		/* post meta */
-		.byline {
-			color: #999;
-            font-size: 12px;
+/* post by id (i.e. post-3) */
+.post {
+}
 
-			time {}
+/* general post style */
+.page {
+}
 
-            .author,
-            time,
-            .comments-count {
+/* general article on a page style */
+.attachment {
+}
 
-                text-transform: uppercase;
-            }
+/* general style on an attatchment */
+.sticky {
+}
 
-            .author a,
-            .comments-count a{
-                color: #999999;
-                text-decoration: underline;
-                &:hover{
-                    color: #999;
-                    text-decoration: none;
-                }
+/* sticky post style */
+.hentry {
+}
 
-            }
+/* hentry class */
+.category-slug {
+}
 
-		}
+/* style by category (i.e. category-videos) */
+.tag-slug {
+}
 
-		/* entry content */
-		.entry-content {
+/* style by tag (i.e. tag-news) */
 
-			p {}
+/* post meta */
+.byline {
+  color: #999;
+  font-size: 12px;
 
+  time {
+  }
 
-			ul, ol, table, dl {}
+  .author,
+  time,
+  .comments-count {
 
-			ul, ol {
+    text-transform: uppercase;
+  }
 
-				li {}
+  .author a,
+  .comments-count a {
+    color: #999999;
+    text-decoration: underline;
+    &:hover {
+      color: #999;
+      text-decoration: none;
+    }
 
-			}
+  }
 
-			ul {
+}
 
-				li {}
+/* entry content */
+.entry-content {
 
-			}
+  p {
+  }
 
-			ol {
+  ul, ol, table, dl {
+  }
 
-				li {}
+  ul, ol {
 
-			}
+    li {
+    }
 
-			blockquote {
+  }
 
-				&:before {}
+  ul {
 
-			}
+    li {
+    }
 
-			dl {}
+  }
 
-			dt {}
+  ol {
 
-			dd {
-				margin-left: 0;
-				font-size: 0.9em;
-				color: #787878;
-				margin-bottom: 1.5em;
-			}
+    li {
+    }
 
-			img {
-				margin: 0;
-				max-width: 100%;
-				height: auto;
-                //@extend .img-polaroid;
-			}
+  }
 
-			/*
-			image alignment on a screen this size may be
-			a bit difficult. It's set to start aligning
-			and floating images at the next breakpoint,
-			but it's up to you. Feel free to change it up.
-			*/
-			.alignleft, img.alignleft {}
-			.alignright, img.alignright {}
-			.aligncenter, img.aligncenter {}
+  blockquote {
 
-			video, object {
-				max-width: 100%;
-				height: auto;
-			}
+    &:before {
+    }
 
-			pre {
-				background: #eee;
-				border: 1px solid #cecece;
-				padding: 10px;
-			}
+  }
 
-            .thumbnail-wrapper {
-                margin-right: 25px;
-            }
+  dl {
+  }
 
-            .excerpt-wraper {
-                //overflow: hidden;
-            }
+  dt {
+  }
 
-            .excerpt-read-more {
-                display: block;
-                margin: 0;
-                font-size: 14px;
-            }
+  dd {
+    margin-left: 0;
+    font-size: 0.9em;
+    color: #787878;
+    margin-bottom: 1.5em;
+  }
 
-		} /* end .entry-content */
+  img {
+    margin: 0;
+    max-width: 100%;
+    height: auto;
+    //@extend .img-polaroid;
+  }
 
-		.wp-caption {
-			max-width: 100%;
-			background: #eee;
-			padding: 5px;
+  /*
+  image alignment on a screen this size may be
+  a bit difficult. It's set to start aligning
+  and floating images at the next breakpoint,
+  but it's up to you. Feel free to change it up.
+  */
+  .alignleft, img.alignleft {
+  }
+  .alignright, img.alignright {
+  }
+  .aligncenter, img.aligncenter {
+  }
 
-			/* images inside wp-caption */
-			img {
-				max-width: 100%;
-				margin-bottom: 0;
-				width: 100%;
-			}
+  video, object {
+    max-width: 100%;
+    height: auto;
+  }
 
-			p.wp-caption-text {
-				font-size: 0.85em;
-				margin: 4px 0 7px;
-				text-align: center;
-			}
+  pre {
+    background: #eee;
+    border: 1px solid #cecece;
+    padding: 10px;
+  }
 
-		} /* end .wp-caption */
+  .thumbnail-wrapper {
+    margin-right: 25px;
+  }
 
-		/* image gallery styles */
-		.gallery {
+  .excerpt-wraper {
+    //overflow: hidden;
+  }
 
-			dl {
+  .excerpt-read-more {
+    display: block;
+    margin: 0;
+    font-size: 14px;
+  }
 
-				a {}
+}
 
-				img {}
+/* end .entry-content */
 
-			}
+.wp-caption {
+  max-width: 100%;
+  background: #eee;
+  padding: 5px;
 
-			dt {}
+  /* images inside wp-caption */
+  img {
+    max-width: 100%;
+    margin-bottom: 0;
+    width: 100%;
+  }
 
-			dd {}
+  p.wp-caption-text {
+    font-size: 0.85em;
+    margin: 4px 0 7px;
+    text-align: center;
+  }
 
-		} /* end .gallery */
+}
 
-		/* gallery caption styles */
-		.gallery-caption {}
+/* end .wp-caption */
 
-		.size-full {}
-		.size-large {}
-		.size-medium {}
-		.size-thumbnail {}
+/* image gallery styles */
+.gallery {
+
+  dl {
+
+    a {
+    }
+
+    img {
+    }
+
+  }
+
+  dt {
+  }
+
+  dd {
+  }
+
+}
+
+/* end .gallery */
+
+/* gallery caption styles */
+.gallery-caption {
+}
+
+.size-full {
+}
+
+.size-large {
+}
+
+.size-medium {
+}
+
+.size-thumbnail {
+}
 
 /*********************
 PEOPLE STYLES
 *********************/
 .alignnone {
 
-    float: left;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    img{
-      max-height: 160px !important;
-    }
-    .wp-caption-text{
-      visibility: hidden;
-      opacity: 0;
-      display: none;
+  float: left;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  img {
+    max-height: 160px !important;
+  }
+  .wp-caption-text {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    position: absolute;
+    top: 160px;
+    background-color: rgba(51, 51, 51, 0.9);
+    color: #ddd;
+    z-index: 1;
+    width: 300%;
+    padding: 20px;
+    text-align: left !important;
+    margin-top: 0 !important;
+    &:before {
       position: absolute;
-      top: 160px;
-      background-color: rgba(51, 51, 51, 0.9);
-      color: #ddd;
-      z-index: 1;
-      width: 300%;
-      padding: 20px;
-      text-align: left !important;
-      margin-top: 0 !important;
-      &:before {
-          position: absolute;
-          top: -6px;
-          left: 40px;
-          display: inline-block;
-          border-right: 7px solid transparent;
-          border-bottom: 7px solid #333;
-          border-left: 7px solid transparent;
-          border-bottom-color: rgba(51, 51, 51, 0.9);
-          content: '';
+      top: -6px;
+      left: 40px;
+      display: inline-block;
+      border-right: 7px solid transparent;
+      border-bottom: 7px solid #333;
+      border-left: 7px solid transparent;
+      border-bottom-color: rgba(51, 51, 51, 0.9);
+      content: '';
 
-      }
     }
+  }
 
-    &:hover {
-        .wp-caption-text{
-            visibility: visible;
-            opacity: 1;
-            display: block;
-        }
+  &:hover {
+    .wp-caption-text {
+      visibility: visible;
+      opacity: 1;
+      display: block;
     }
+  }
 }
-.community{
-    
-    img {
-        width: 100px;
-    }
+
+.community {
+
+  img {
+    width: 100px;
+  }
 }
+
 /*********************
 TAGCLOUD STYLES
 *********************/
 
-.tagcloud{
+.tagcloud {
 
-    .tag-link-13,
-    .tag-link-32,
-    .tag-link-50,
-    .tag-link-45,
-    .tag-link-40,
-    .tag-link-36,
-    .tag-link-7,
-    .tag-link-21,
-    .tag-link-33,
-    .tag-link-24,
-    .tag-link-17,
-    .tag-link-19,
-    .tag-link-26
-    {
-        color: #b7d500
-    }
+  .tag-link-13,
+  .tag-link-32,
+  .tag-link-50,
+  .tag-link-45,
+  .tag-link-40,
+  .tag-link-36,
+  .tag-link-7,
+  .tag-link-21,
+  .tag-link-33,
+  .tag-link-24,
+  .tag-link-17,
+  .tag-link-19,
+  .tag-link-26 {
+    color: #b7d500
+  }
 
-    .tag-link-31,
-    .tag-link-49,
-    .tag-link-2,
-    .tag-link-34,
-    .tag-link-5,
-    .tag-link-20,
-    .tag-link-4,
-    .tag-link-35,
-    .tag-link-37,
-    .tag-link-52,
-    .tag-link-38,
-    .tag-link-18,
-    .tag-link-44
-    {
-        color: #ffbc1a
-    }
-    .tag-link-25,
-    .tag-link-6,
-    .tag-link-14,
-    .tag-link-27,
-    .tag-link-51,
-    .tag-link-48,
-    .tag-link-39,
-    .tag-link-28,
-    .tag-link-9,
-    .tag-link-8,
-    .tag-link-23,
-    .tag-link-41,
-    .tag-link-11
-    {
-        color: #ff7300
-    }
+  .tag-link-31,
+  .tag-link-49,
+  .tag-link-2,
+  .tag-link-34,
+  .tag-link-5,
+  .tag-link-20,
+  .tag-link-4,
+  .tag-link-35,
+  .tag-link-37,
+  .tag-link-52,
+  .tag-link-38,
+  .tag-link-18,
+  .tag-link-44 {
+    color: #ffbc1a
+  }
+  .tag-link-25,
+  .tag-link-6,
+  .tag-link-14,
+  .tag-link-27,
+  .tag-link-51,
+  .tag-link-48,
+  .tag-link-39,
+  .tag-link-28,
+  .tag-link-9,
+  .tag-link-8,
+  .tag-link-23,
+  .tag-link-41,
+  .tag-link-11 {
+    color: #ff7300
+  }
 }
+
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
 
 .pagination,
 .wp-prev-next {
-	margin: 1.1em 0 2.2em;
+  margin: 1.1em 0 2.2em;
 }
-	.pagination{
-        text-align: center;
-        ul {
-            display: inline-block;
-            white-space: nowrap;
-            padding:0;
-            clear: both;
-            margin: 1px;
-            li {
-                padding: 0;
-                margin: 0;
-                float: left;
-                display: inline;
-                overflow: hidden;
-                a, span {
-                    margin: 0;
-                    text-decoration: none;
-                    padding: 0;
-                    line-height: 1em;
-                    font-size: 1em;
-                    font-weight: normal;
-                    padding: .5em;
-                    min-width: 1em;
-                    display: block;
-                }
-                span.current{
-                	font-weight: bold;
-                }
-                a:hover, a:focus {
-                    
-                }
-            }
-        }
-    } /* end .bones_page_navi */
 
-	/* fallback previous & next links */
-	.wp-prev-next {
+.pagination {
+  text-align: center;
+  ul {
+    display: inline-block;
+    white-space: nowrap;
+    padding: 0;
+    clear: both;
+    margin: 1px;
+    li {
+      padding: 0;
+      margin: 0;
+      float: left;
+      display: inline;
+      overflow: hidden;
+      a, span {
+        margin: 0;
+        text-decoration: none;
+        padding: 0;
+        line-height: 1em;
+        font-size: 1em;
+        font-weight: normal;
+        padding: .5em;
+        min-width: 1em;
+        display: block;
+      }
+      span.current {
+        font-weight: bold;
+      }
+      a:hover, a:focus {
 
-		ul {}
+      }
+    }
+  }
+}
 
-		.prev-link {
-			float: left;
-		}
+/* end .bones_page_navi */
 
-		.next-link {
-			float: right;
-		}
+/* fallback previous & next links */
+.wp-prev-next {
 
-	} /* end .wp-prev-next */
+  ul {
+  }
+
+  .prev-link {
+    float: left;
+  }
+
+  .next-link {
+    float: right;
+  }
+
+}
+
+/* end .wp-prev-next */
 
 /******************************************************************
 COMMENT STYLES
@@ -977,392 +1196,443 @@ COMMENT STYLES
 /* h3 comment title */
 #comments {
 
-	/* number of comments span */
-	span {}
+  /* number of comments span */
+  span {
+  }
 
 }
 
 .comment-nav {
 
-	ul {
+  ul {
 
-		li {}
+    li {
+    }
 
-	}
+  }
 }
-
 
 .commentlist {
 
-	li {
-		position: relative;
-		clear: both;
-		overflow: hidden;
-		list-style-type: none;
-		margin-bottom: 1.5em;
-		padding: 0.7335em 10px;
+  li {
+    position: relative;
+    clear: both;
+    overflow: hidden;
+    list-style-type: none;
+    margin-bottom: 1.5em;
+    padding: 0.7335em 10px;
 
-		&:last-child {
-			margin-bottom: 0;
-		}
+    &:last-child {
+      margin-bottom: 0;
+    }
 
-		ul.children {
-			margin: 0;
+    ul.children {
+      margin: 0;
 
-			li {}
+      li {
+      }
 
-			/* variations */
-			.comment {}
-			.alt {}
-			.odd {}
-			.even {}
-			.depth-1 {}           /* change number for different depth */
-			.byuser {}
-			.bypostauthor {}
-			.comment-author-admin {}
+      /* variations */
+      .comment {
+      }
+      .alt {
+      }
+      .odd {
+      }
+      .even {
+      }
+      .depth-1 {
+      }
+      /* change number for different depth */
+      .byuser {
+      }
+      .bypostauthor {
+      }
+      .comment-author-admin {
+      }
 
-		} /* end .commentlist li ul.children */
-	}
+    }
+    /* end .commentlist li ul.children */
+  }
 
-	li[class*=depth-] {
-		margin-top: 1.1em;
-	}
+  li[class*=depth-] {
+    margin-top: 1.1em;
+  }
 
-	li.depth-1 {
-		margin-left: 0;
-		margin-top: 0;
-	}
+  li.depth-1 {
+    margin-left: 0;
+    margin-top: 0;
+  }
 
-	li:not(.depth-1) {
-		margin-right: -10px;
-		margin-left: -10px;
-		margin-top: 0;
-		padding-bottom: 0;
-	}
+  li:not(.depth-1) {
+    margin-right: -10px;
+    margin-left: -10px;
+    margin-top: 0;
+    padding-bottom: 0;
+  }
 
-	li.depth-2 {}
-	li.depth-3 {}
-	li.depth-4 {}
-	li.depth-5 {}
+  li.depth-2 {
+  }
+  li.depth-3 {
+  }
+  li.depth-4 {
+  }
+  li.depth-5 {
+  }
 
-	/* general comment classes */
-	.alt {}
-	.odd {
-		background: #eee;
-	}
-	.even {
-		background: #fefefe;
-	}
-	.parent {}
-	.comment {}
-	.children {}
-	.pingback {}
-	.bypostauthor {}
-	.comment-author {}
-	.comment-author-admin {}
-	.thread-alt {}
-	.thread-odd {}
-	.thread-even {}
+  /* general comment classes */
+  .alt {
+  }
+  .odd {
+    background: #eee;
+  }
+  .even {
+    background: #fefefe;
+  }
+  .parent {
+  }
+  .comment {
+  }
+  .children {
+  }
+  .pingback {
+  }
+  .bypostauthor {
+  }
+  .comment-author {
+  }
+  .comment-author-admin {
+  }
+  .thread-alt {
+  }
+  .thread-odd {
+  }
+  .thread-even {
+  }
 
-	/* vcard */
-	.vcard {
-		margin-left: 50px;
+  /* vcard */
+  .vcard {
+    margin-left: 50px;
 
-		cite.fn {
-			font-weight: 700;
-			font-style: normal;
+    cite.fn {
+      font-weight: 700;
+      font-style: normal;
 
-			a.url {}
+      a.url {
+      }
 
-		}
+    }
 
-		time {
-			float: right;
+    time {
+      float: right;
 
-			a {
-				color: #999;
-				text-decoration: none;
+      a {
+        color: #999;
+        text-decoration: none;
 
-				&:hover {
-					text-decoration: underline;
-				}
+        &:hover {
+          text-decoration: underline;
+        }
 
-			}
+      }
 
-		}
+    }
 
-		img.photo {}
+    img.photo {
+    }
 
-		img.avatar {
-			position: absolute;
-			left: 10px;
-			padding: 2px;
-			border: 1px solid #cecece;
-			background: #fff;
-		}
+    img.avatar {
+      position: absolute;
+      left: 10px;
+      padding: 2px;
+      border: 1px solid #cecece;
+      background: #fff;
+    }
 
+  }
+  /* end .commentlist .vcard */
 
-	} /* end .commentlist .vcard */
+  /* comment meta */
+  .comment-meta {
 
+    a {
+    }
 
-	/* comment meta */
-	.comment-meta {
+  }
 
-		a {}
+  .commentmetadata {
 
-	}
+    a {
+    }
 
-	.commentmetadata {
+  }
 
-		a {}
+  /* comment content */
+  .comment_content {
+    margin-left: 50px;
 
-	}
+    p {
+      margin: 0.7335em 0 1.5em;
+      font-size: 1em;
+      line-height: 1.5em;
+    }
 
-	/* comment content */
-	.comment_content {
-		margin-left: 50px;
+  }
+  /* end .commentlist .comment_content */
 
-		p {
-			margin: 0.7335em 0 1.5em;
-			font-size: 1em;
-			line-height: 1.5em;
-		}
+  /* comment reply link */
+  .comment-reply-link {
+    text-decoration: none;
+    float: right;
+    background: #4598bb;
+    padding: 3px 5px;
+    color: #fff;
+    opacity: 0.65;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 0.9em;
 
-	} /* end .commentlist .comment_content */
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
 
-	/* comment reply link */
-	.comment-reply-link {
-		text-decoration: none;
-		float: right;
-		background: #4598bb;
-		padding: 3px 5px;
-		color: #fff;
-		opacity: 0.65;
-		margin-bottom: 10px;
-		font-weight: 700;
-		font-size: 0.9em;
+  }
+  /* end .commentlist .comment-reply-link */
 
-		&:hover,
-		&:focus {
-			opacity: 1;
-		}
+}
 
-	} /* end .commentlist .comment-reply-link */
-
-} /* end .commentlist */
+/* end .commentlist */
 
 /******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
 
 .respond-form {
-	margin: 1.5em 10px;
-	padding-bottom: 2.2em;
+  margin: 1.5em 10px;
+  padding-bottom: 2.2em;
 
-	form {
-		margin: 0.75em 0;
+  form {
+    margin: 0.75em 0;
 
-		li {
-			list-style-type: none;
-			clear: both;
-			margin-bottom: 0.7335em;
+    li {
+      list-style-type: none;
+      clear: both;
+      margin-bottom: 0.7335em;
 
-			label,
-			small {
-				display: none;
-			}
-		}
+      label,
+      small {
+        display: none;
+      }
+    }
 
-		input[type=text],
-		input[type=email],
-		input[type=url],
-		textarea {
-			padding: 3px 6px;
-			background: #efefef;
-			border: 2px solid #cecece;
-			line-height: 1.5em;
+    input[type=text],
+    input[type=email],
+    input[type=url],
+    textarea {
+      padding: 3px 6px;
+      background: #efefef;
+      border: 2px solid #cecece;
+      line-height: 1.5em;
 
-			&:focus {
-				background: #fff;
-			}
+      &:focus {
+        background: #fff;
+      }
 
-			/* form validation */
-			&:invalid {
-				outline: none;
-				border-color: #fbc2c4;
-				background-color: #f6e7eb;
-				-webkit-box-shadow: none;
-				   -moz-box-shadow: none;
-				    -ms-box-shadow: none;
-						box-shadow: none;
-			}
-		}
+      /* form validation */
+      &:invalid {
+        outline: none;
+        border-color: #fbc2c4;
+        background-color: #f6e7eb;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        -ms-box-shadow: none;
+        box-shadow: none;
+      }
+    }
 
-		input[type=text],
-		input[type=email],
-		input[type=url] {
-			max-width: 400px;
-			min-width: 250px;
-		}
+    input[type=text],
+    input[type=email],
+    input[type=url] {
+      max-width: 400px;
+      min-width: 250px;
+    }
 
-		textarea {
-			resize: none;
-			width: 97.3%;
-			height: 150px;
-		}
+    textarea {
+      resize: none;
+      width: 97.3%;
+      height: 150px;
+    }
 
-	}
+  }
 }
 
-	/* comment submit button */
-	#submit {}
+/* comment submit button */
+#submit {
+}
 
-	/* comment form title */
-	#comment-form-title {
-		margin: 0 0 1.1em;
-	}
+/* comment form title */
+#comment-form-title {
+  margin: 0 0 1.1em;
+}
 
-	/* cancel comment reply link */
-	#cancel-comment-reply {
-		a {}
-	}
+/* cancel comment reply link */
+#cancel-comment-reply {
+  a {
+  }
+}
 
-	/* logged in comments */
-	.comments-logged-in-as {}
+/* logged in comments */
+.comments-logged-in-as {
+}
 
-	/* allowed tags */
-	#allowed_tags {
-		margin: 1.5em 10px 0.7335em 0;
-	}
-    .allowed-tags code{
-        white-space: normal !important;
+/* allowed tags */
+#allowed_tags {
+  margin: 1.5em 10px 0.7335em 0;
+}
 
-    }
-    #comment{
+.allowed-tags code {
+  white-space: normal !important;
 
-        background-color: white !important;
-        border: 1px solid #cccccc;
-        border-radius: 0;
+}
 
-    }
-	/* no comments */
-	.nocomments {
-		margin: 0 20px 1.1em;
-	}
+#comment {
+
+  background-color: white !important;
+  border: 1px solid #cccccc;
+  border-radius: 0;
+
+}
+
+/* no comments */
+.nocomments {
+  margin: 0 20px 1.1em;
+}
 
 /*********************
 SIDEBARS & ASIDES
 *********************/
 
 .sidebar {
-    ul {
-       margin-left: 0;
+  ul {
+    margin-left: 0;
+  }
+
+  padding: 60px 20px;
+
+  #searchform {
+
+    margin-bottom: 0;
+    position: relative;
+
+    input {
+      margin: 0;
+      width: 100%;
+      padding-right: 30px;
+      border: 1px solid #999;
+      border-radius: 0;
     }
 
-    padding: 60px 20px;
-
-    #searchform {
-
-        margin-bottom: 0;
-        position: relative;
-
-        input{
-            margin: 0;
-            width: 100%;
-            padding-right: 30px;
-            border: 1px solid #999;
-            border-radius: 0;
-        }
-
-        #searchsubmit{
-            border: none;
-            background: none;
-            color:  #999999;
-            position: absolute;
-            top: 0px;
-            right: 0;
-            padding: 7px;
-        }
-
+    #searchsubmit {
+      border: none;
+      background: none;
+      color: #999999;
+      position: absolute;
+      top: 0px;
+      right: 0;
+      padding: 7px;
     }
+
+  }
 }
 
-	.widgettitle {border-bottom: 1px solid #ffffff;}
+.widgettitle {
+  border-bottom: 1px solid #ffffff;
+}
 
-	.widget {
+.widget {
 
-		ul {
+  ul {
 
-			li {
+    li {
 
-				&:first-child {}
+      &:first-child {
+      }
 
-				&:last-child {}
+      &:last-child {
+      }
 
-				a {}
+      a {
+      }
 
-				/* deep nesting */
-				ul {}
+      /* deep nesting */
+      ul {
+      }
 
-			}
+    }
 
-		}
+  }
 
-        &.widget_archive select { width: 100%;}
-        &.widget_meta ul li a {
-            font-size: 12px;
-            color: #999;
-        }
+  &.widget_archive select {
+    width: 100%;
+  }
+  &.widget_meta ul li a {
+    font-size: 12px;
+    color: #999;
+  }
 
-	}
-
+}
 
 /*********************
 FOOTER STYLES
 *********************/
 
 .footer {
-	clear: both;
-    background-color: #333;
-    margin: 0;
-    padding: 20px 0;
-    color: #ccc;
+  clear: both;
+  background-color: #333;
+  margin: 0;
+  padding: 20px 0;
+  color: #ccc;
 }
 
-	/*
-	if you checked out the link above:
-	http://www.alistapart.com/articles/organizing-mobile/
-	you'll want to style the footer nav
-	a bit more in-depth. Remember to keep
-	it simple because you'll have to
-	override these styles for the desktop
-	view.
-	*/
-	.footer-links {
+/*
+if you checked out the link above:
+http://www.alistapart.com/articles/organizing-mobile/
+you'll want to style the footer nav
+a bit more in-depth. Remember to keep
+it simple because you'll have to
+override these styles for the desktop
+view.
+*/
+.footer-links {
 
-		ul {
+  ul {
 
-			li {}
-
-		}
-
-	} /* end .footer-links */
-    .article-footer {
-
-        .social {
-
-            img {
-                width: 50px !important;
-                padding: 7px;
-                border: 0;
-                box-shadow: none !important;
-                display: inline;
-                vertical-align: middle;
-            }
-
-        }
-
+    li {
     }
 
-	.copyright {}
+  }
+
+}
+
+/* end .footer-links */
+.article-footer {
+
+  .social {
+
+    img {
+      width: 50px !important;
+      padding: 7px;
+      border: 0;
+      box-shadow: none !important;
+      display: inline;
+      vertical-align: middle;
+    }
+
+  }
+
+}
+
+.copyright {
+}
 

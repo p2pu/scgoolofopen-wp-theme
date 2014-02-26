@@ -37,7 +37,7 @@
 
 	<?php // wordpress head functions ?>
 	<?php wp_head(); ?>
-	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/library/css/jquery.sidr.dark.css">
 	<?php // end of wordpress head ?>
 
@@ -67,32 +67,39 @@
 						<i class="icon-align-justify"></i>
 				</a>
 
-			<a class="brand" href="<?php echo home_url(); ?>"></a>
+			<a class="brand" href="<?php echo home_url(); ?>">
+                <i class="fa fa-home"></i>
+            </a>
 
 			<?php wp_nav_menu(
 				array(
 					'theme_location' => 'Main Nav',
 					'container_class' => 'nav-collapse collapse mindevices-side-menu hidden-phone hidden-tablet',
-					'menu_class' => 'nav visible-desktop'
+					'menu_class' => 'nav visible-desktop visible-tablet'
 				)); ?>
-
-			<ul class="nav pull-right nav-collapse collapse mindevices-side-menu hidden-phone hidden-tablet">
-
-				<li>
-
-			        <a target="_blank" href="https://twitter.com/p2pu" class="cc-logo">
-                        <img src="<?php echo get_template_directory_uri() ?>/library/images/cc.logo.large.png" alt="CC Logo"/>
-				    </a>
-
-			    </li>
-
-            </ul>
 
         <?php
         if ( is_home() ) {?>
         </div><?php
         }?>
+            <ul class="logos nav pull-right nav-collapse collapse mindevices-side-menu hidden-phone hidden-tablet">
+                <li>
+                    <a href="https://p2pu.org/en/">
+                        <img src="<?php echo get_template_directory_uri(); ?>/library/images/logo-p2pu-menu.png"
+                             alt="P2PU Logo"/>
+                    </a>
+                </li>
+                <li class="logo-plus-sign"><i class="fa fa-plus"></i></li>
+                <li>
 
+
+                    <a target="_blank" href="http://creativecommons.org/" class="cc-logo">
+                        <img src="<?php echo get_template_directory_uri() ?>/library/images/cc.logo.large.png" alt="CC Logo"/>
+                    </a>
+
+                </li>
+
+            </ul>
 	</div>
 
 </div>

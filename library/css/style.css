@@ -7051,8 +7051,7 @@ style a page via class
 .thumbnail {
   width: 100px;
   background-color: white;
-  margin-right: 15px;
-  height: 170px; }
+  margin-right: 15px; }
 
 .left {
   float: left; }
@@ -7158,29 +7157,41 @@ HEADER STYLES
 .navbar .navbar-inner {
   padding: 0 25px; }
 .navbar .nav {
-  margin-top: 15px; }
+  margin-top: 11px; }
 .navbar .brand {
-  background-image: url("../images/logo-p2pu-menu.png"); }
+  font-family: "arvo", Helvetica, sans-serif;
+  text-indent: 0;
+  font-size: 25px;
+  margin-top: 8px;
+  width: 25px;
+  height: 45px;
+  margin-bottom: 0;
+  color: #05c6b4; }
 .navbar .btn-group {
   line-height: 30px; }
 .navbar .pull-right {
-  margin-top: 0; }
+  margin-top: 5px; }
+.navbar .logo-plus-sign {
+  margin-top: 10px; }
 .navbar .cc-logo img {
-  width: 200px;
-  height: 47px; }
+  height: 24px; }
 
 .jumbotron {
+  position: relative;
   background-color: #FFFFFF;
   width: 100%;
-  padding: 60px 0;
-  color: #333333; }
+  padding: 120px 0;
+  color: #515665;
+  margin-top: -5px;
+  background: url("../images/skulls.png") repeat top left; }
   .jumbotron .welcome-wrap {
     width: 70%;
     float: left; }
   .jumbotron .welcome {
     font-family: "arvo", Helvetica, sans-serif;
     font-size: 45px;
-    font-weight: bold; }
+    font-weight: bold;
+    line-height: 50px; }
   .jumbotron p {
     font-size: 21px;
     line-height: 1.3em; }
@@ -7262,6 +7273,13 @@ and more scalable.
 /*********************
 ACTIONS STYLES
 *********************/
+.actions-section {
+  margin-top: -120px;
+  padding-bottom: 100px; }
+
+.actions-wrapper {
+  background-color: #515665; }
+
 .actions {
   margin-top: 15px; }
   .actions ul {
@@ -7275,24 +7293,17 @@ ACTIONS STYLES
     border: 1px solid #5F2E7E;
     position: relative;
     padding: 10px;
-    background-color: white;
-    background-image: url("../images/courses-logo.png");
-    background-repeat: no-repeat;
-    background-position: 50% 50%; }
+    background-color: white; }
     .actions li:first-child {
       margin-left: 0; }
     .actions li h1 {
       font-family: "arvo", Helvetica, sans-serif;
-      float: left; }
-    .actions li p {
-      position: absolute;
-      bottom: 70px; }
+      height: 106px; }
     .actions li img {
       float: right;
       width: 100px; }
     .actions li.workshops {
-      border-color: #3D9A33;
-      background-image: url("../images/workshops-logo.png"); }
+      border-color: #3D9A33; }
       .actions li.workshops a {
         background-color: #3D9A33; }
         .actions li.workshops a img {
@@ -7302,8 +7313,7 @@ ACTIONS STYLES
           .actions li.workshops a:hover .logo {
             background-image: url("../images/workshops-logo-light.png"); }
     .actions li.training {
-      border-color: #B93D43;
-      background-image: url("../images/trainings-logo.png"); }
+      border-color: #B93D43; }
       .actions li.training a {
         background-color: #B93D43; }
         .actions li.training a img {
@@ -7334,7 +7344,7 @@ POSTS & CONTENT STYLES
 .section-background {
   position: relative;
   background-color: white;
-  padding: 40px 0; }
+  padding: 40px 0 80px 0; }
   .section-background .wrap {
     position: relative; }
     .section-background .wrap:after, .section-background .wrap:before {
@@ -7348,21 +7358,24 @@ POSTS & CONTENT STYLES
       pointer-events: none; }
     .section-background .wrap:after {
       border-color: rgba(243, 244, 248, 0);
-      border-top-color: #F3F4F8;
+      border-top-color: #515665;
       border-width: 30px;
       margin-left: -30px; }
     .section-background .wrap:before {
       border-color: rgba(0, 0, 0, 0);
-      border-top-color: #F3F4F8;
+      border-top-color: #515665;
       border-width: 36px;
       margin-left: -36px; }
   .section-background.whitesmoke {
     background-color: #F3F4F8; }
     .section-background.whitesmoke .wrap:after, .section-background.whitesmoke .wrap:before {
-      border-top-color: white; }
+      border-top-color: white;
+      top: -60px; }
+  .section-background.white .wrap:after, .section-background.white .wrap:before {
+    border-top-color: #F3F4F8; }
 
 .section {
-  padding: 30px 0; }
+  padding: 50px 0 100px 0; }
 
 .section-heading {
   font-family: "arvo", Helvetica, sans-serif;
