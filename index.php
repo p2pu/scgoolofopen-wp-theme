@@ -14,30 +14,19 @@
 
             </div>
 
-            <?php
-            $the_slug = 'welcome-to-the-school-of-open';
-            $args=array(
-                'name' => $the_slug,
-                'post_type' => 'post',
-                'post_status' => 'publish',
-                'numberposts' => 1
-            );
-            $heading = get_posts($args);
+            <?php query_posts('name=welcome-to-the-school-of-open'); ?>
+            <?php while (have_posts()) : the_post(); ?>
 
-            if( $heading ){
-                echo $heading->post_title;
-            ?>
-            <div class="eightcol">
+                <div class="eightcol">
 
-                <div class="welcome">
-                    Welcome to the School of Open!
-                    
-                    <?php echo $heading->post_title; ?>
+                    <div class="welcome">
+                        <?php echo the_title(); ?>
+                    </div>
+
+                    <p><?php the_content(); ?></p>
                 </div>
 
-                <p><?php echo $heading->post_content; ?></p>
-            </div>
-            <?php } ?>
+            <?php endwhile;?>
 
         </div>
 

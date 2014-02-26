@@ -53,3 +53,7 @@ temp/
 .Trashes
 
 .svn
+
+.sass-cache/
+p2pu-css-framework/
+
