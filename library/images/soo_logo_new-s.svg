@@ -16,9 +16,9 @@
    width="100"
    height="141"
    sodipodi:docname="soo_logo_new-s.svg"
-   inkscape:export-filename="/home/erika/DEV/p2pu/schoolofopen.p2pu.org/wp-content/themes/schoolofopen-theme/library/images/soo-logo-new-100x100.png"
-   inkscape:export-xdpi="87.722961"
-   inkscape:export-ydpi="87.722961">
+   inkscape:export-filename="/home/erika/DEV/p2pu/schoolofopen.p2pu.org/wp-content/themes/schoolofopen-theme/library/images/soo-logo-new-260x260.png"
+   inkscape:export-xdpi="226.99446"
+   inkscape:export-ydpi="226.99446">
   <metadata
      id="metadata3211">
     <rdf:RDF>
@@ -52,11 +52,11 @@
      inkscape:snap-grids="false"
      inkscape:zoom="4"
      inkscape:cx="53.557203"
-     inkscape:cy="67.940583"
+     inkscape:cy="97.940583"
      inkscape:window-x="65"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="layer4"
      showguides="true"
      inkscape:guide-bbox="true" />
   <g
@@ -85,7 +85,7 @@
      style="display:inline">
     <path
        sodipodi:type="arc"
-       style="fill:#98c807;fill-opacity:1;stroke:#56692d;stroke-width:0.74150442;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:#98c807;fill-opacity:1;stroke:#98c807;stroke-width:0.74150442000000005;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="path4159"
        sodipodi:cx="51.265244"
        sodipodi:cy="74.53196"
@@ -93,8 +93,9 @@
        sodipodi:ry="35.355339"
        d="m 86.620583,74.53196 a 35.355339,35.355339 0 1 1 -70.710679,0 35.355339,35.355339 0 1 1 70.710679,0 z"
        transform="matrix(1.3721555,0,0,-1.3254678,-19.907662,171.20517)"
-       inkscape:export-xdpi="179.31706"
-       inkscape:export-ydpi="179.31706" />
+       inkscape:export-xdpi="238.61423"
+       inkscape:export-ydpi="238.61423"
+       inkscape:export-filename="/home/erika/DEV/p2pu/schoolofopen.p2pu.org/wp-content/themes/schoolofopen-theme/library/images/soo-logo-new-260x260.png" />
   </g>
   <g
      inkscape:groupmode="layer"

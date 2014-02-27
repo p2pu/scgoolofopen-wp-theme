@@ -35,6 +35,16 @@ the other stylesheets. Remember, keep it light: Speed is Important.
 // styles in base.scss
 @import "base";
 
+
+/*
+MOBILE DEVICES
+This is for devices like an iPhone.
+*/
+@media only screen and (min-device-width : 321px){
+  // styles in 381up.scss
+  @import "_321up";
+
+}
 /*
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
@@ -62,7 +72,9 @@ you can add resource intensive styles.
 	// styles in 768up.scss
 	@import "768up";
 
+
 } // end of media query
+
 
 /*
 DESKTOP

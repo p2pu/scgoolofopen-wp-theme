@@ -64,7 +64,7 @@
 
 				<a class="navbar-btn visible-phone visible-tablet" data-toggle="collapse" data-target=".nav-collapse"
 				   href="#main-menu-panel">
-						<i class="icon-align-justify"></i>
+						<i class="fa fa-align-justify"></i>
 				</a>
 
 			<a class="brand" href="<?php echo home_url(); ?>">

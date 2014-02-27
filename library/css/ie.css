@@ -309,7 +309,7 @@ values are commented out on each line.
   width: 74.30939226%; }
 
 /* 74.05%; } /* grid_9  */
-.tencol {
+.tencol, .invitation .invitation-button {
   width: 82.87292817100001%; }
 
 /* 82.7%;  } /* grid_10 */
@@ -321,7 +321,7 @@ values are commented out on each line.
   width: 99.999999993%; }
 
 /* 100%;   } /* grid_12 */
-.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .invitation .invitation-button, .elevencol, .twelvecol {
   position: relative;
   float: left;
   margin-left: 2.762430939%; }
@@ -348,6 +348,12 @@ so you still want to keep it pretty light and simply expand
 upon your base.scss styles.
 
 ******************************************************************/
+body {
+  padding: 0; }
+
+.jumbotron img {
+  width: 150px; }
+
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -501,6 +507,30 @@ NAVIGATION STYLES
 
 /* end .nav */
 /*********************
+JUMBOTRON
+*********************/
+.jumbotron {
+  padding-top: 70px; }
+  .jumbotron img {
+    width: 100%; }
+
+/*********************
+ACTIONS MENU
+*********************/
+.actions li {
+  margin-left: 20px; }
+  .actions li:first-child {
+    margin-left: 0; }
+
+/*********************
+SECTION ARROWS
+*********************/
+.section-background.whitesmoke .wrap:after, .section-background.whitesmoke .wrap:before {
+  top: -51px; }
+.section-background .wrap:after, .section-background .wrap:before {
+  top: -40px; }
+
+/*********************
 SIDEBARS & ASIDES
 *********************/
 .sidebar {
@@ -581,6 +611,26 @@ body {
 
 .excerpt-wraper {
   overflow: hidden; }
+
+/*********************
+JUMBOTRON
+*********************/
+.jumbotron {
+  padding-top: 120px; }
+
+/*********************
+INVITATION BUTTONS
+*********************/
+.invitation .invitation-button {
+  float: right !important; }
+  .invitation .invitation-button a {
+    background-image: url("../images/get-involved-discussion.png");
+    background-position: 35px 50%;
+    background-repeat: no-repeat; }
+  .invitation .invitation-button.create a {
+    background-image: url("../images/get-involved-create.png"); }
+  .invitation .invitation-button.involve a {
+    background-image: url("../images/get-involved-involve.png"); }
 
 /* 
 you can call the larger styles if you want, but there's really no need 

@@ -12,12 +12,11 @@ come into play. Have fun!
 
 ******************************************************************/
 
-
 /*********************
 GENERAL STYLES
 *********************/
 
-body {}
+
 
 /*********************
 LAYOUT & GRID STYLES
@@ -31,9 +30,11 @@ LAYOUT & GRID STYLES
 HEADER STYLES
 *********************/
 
-.header {}
+.header {
+}
 
-	#logo {}
+#logo {
+}
 
 /*********************
 NAVIGATION STYLES
@@ -42,7 +43,7 @@ NAVIGATION STYLES
 .nav {
 	border: 0;
 	ul {
-		margin-top:0;
+		margin-top: 0;
 	}
 	li {
 		float: left;
@@ -50,35 +51,37 @@ NAVIGATION STYLES
 
 		a {
 			border-bottom: 0;
-            color: #999999;
+			color: #999999;
 			/*
 			you can use hover styles here even though this size
 			has the possibility of being a mobile device.
 			*/
 			&:hover, &:focus {
 				//background-color: #dedede;
-              color: darken(#999999, 10%);
+				color: darken(#999999, 10%);
 			}
 		}
 
-		&:first-child {}
-		&:last-child {}
+		&:first-child {
+		}
+		&:last-child {
+		}
 
 		/*
 		plan your menus and drop-downs wisely.
 		*/
 		ul.sub-menu,
 		ul.children {
-            transition: margin-top 0.3s ease;
+			transition: margin-top 0.3s ease;
 			margin-top: -1000px;
-            margin-left: 0;
+			margin-left: 0;
 			border-top: 0;
-            background-color: #FCFCFC;
+			background-color: #FCFCFC;
 			position: absolute;
 			overflow: hidden;
 			visibility: hidden;
 			z-index: 8999;
-            box-shadow: 0 3px 11px rgba(0, 0, 0, 0.1);
+			box-shadow: 0 3px 11px rgba(0, 0, 0, 0.1);
 
 			li {
 
@@ -88,15 +91,18 @@ NAVIGATION STYLES
 					display: block;
 					width: 180px;
 					border-bottom: 1px dotted #ccc;
-                    font-size: 14px;
+					font-size: 14px;
 
 					&:hover,
-					&:focus {}
+					&:focus {
+					}
 
-					&:link {}
+					&:link {
+					}
 				}
 
-				&:first-child {}
+				&:first-child {
+				}
 
 				&:last-child {
 
@@ -110,14 +116,16 @@ NAVIGATION STYLES
 				just remember deeper menus suck
 				for usability. k, bai.
 				*/
-				ul {}
+				ul {
+				}
 			}
 
 			/* highlight sub-menu current page */
 			li.current-menu-item,
 			li.current_page_item,
 			li.current-page-ancestor {
-				a {}
+				a {
+				}
 			}
 		}
 
@@ -125,27 +133,95 @@ NAVIGATION STYLES
 		&:hover ul {
 			top: auto;
 			overflow: visible;
-			visibility:visible;
+			visibility: visible;
 		}
 
-	} /* end .menu ul li */
+	}
+	/* end .menu ul li */
 
-    .menu-item-has-children{
-      &:hover {
-        ul.sub-menu{
-          margin-top: 0px;
-        }
-      }
-    }
+	.menu-item-has-children {
+		&:hover {
+			ul.sub-menu {
+				margin-top: 0px;
+			}
+		}
+	}
 
 	/* highlight current page */
 	li.current-menu-item,
 	li.current_page_item,
 	li.current-page-ancestor {
-		a {}
-	}  /* end current highlighters */
+		a {
+		}
+	}
+	/* end current highlighters */
 
-} /* end .nav */
+}
+
+/* end .nav */
+
+/*********************
+JUMBOTRON
+*********************/
+.jumbotron {
+
+	padding-top: 70px;
+
+	img {
+
+		width: 100%;
+	}
+
+}
+
+/*********************
+ACTIONS MENU
+*********************/
+.actions {
+
+	li {
+
+		margin-left: 20px;
+
+		&:first-child {
+
+			margin-left: 0;
+
+		}
+
+	}
+
+}
+
+/*********************
+SECTION ARROWS
+*********************/
+.section-background {
+	&.whitesmoke {
+		.wrap {
+
+			&:after, &:before {
+
+				top: -51px;
+
+			}
+
+		}
+	}
+
+	.wrap {
+
+		&:after, &:before {
+
+			top: -40px;
+
+		}
+
+	}
+
+}
+
+
 
 /*********************
 SIDEBARS & ASIDES
@@ -155,143 +231,262 @@ SIDEBARS & ASIDES
 	margin-top: 0;
 }
 
-	.widgettitle {
-		border-bottom: 1px solid #ffffff;
-		margin-bottom: 0.75em;
-	}
+.widgettitle {
+	border-bottom: 1px solid #ffffff;
+	margin-bottom: 0.75em;
+}
 
-	.widget {
-		padding: 0 10px;
-		margin: 2.2em 0;
+.widget {
+	padding: 0 10px;
+	margin: 2.2em 0;
 
-		ul {
-			li {
-				margin-bottom: 0.75em;
+	ul {
+		li {
+			margin-bottom: 0.75em;
 
-				&:first-child {}
-				&:last-child {}
-				a {}
-				/* deep nesting */
+			&:first-child {
+			}
+			&:last-child {
+			}
+			a {
+			}
+			/* deep nesting */
 
-				ul {
-					margin-top: 0.75em;
-					padding-left: 1em;
-				}
+			ul {
+				margin-top: 0.75em;
+				padding-left: 1em;
 			}
 		}
-
 	}
 
+}
 
-	/* links widget */
-	.widget_links {}
-	.widget_links ul {}
-	.widget_links ul li {}
-	.widget_links ul li a {}
+/* links widget */
+.widget_links {
+}
 
-	/* meta widget */
-	.widget_meta {}
-	.widget_meta ul {}
-	.widget_meta ul li {}
-	.widget_meta ul li a {}
+.widget_links ul {
+}
 
-	/* pages widget */
-	.widget_pages {}
-	.widget_pages ul {}
-	.widget_pages ul li {}
-	.widget_pages ul li a {}
+.widget_links ul li {
+}
 
-	/* recent-posts widget */
-	.widget_recent_entries {}
-	.widget_recent_entries ul {}
-	.widget_recent_entries ul li {}
-	.widget_recent_entries ul li a {}
+.widget_links ul li a {
+}
 
-	/* archives widget */
-	.widget_archive {}
-	.widget_archive ul {}
-	.widget_archive ul li {}
-	.widget_archive ul li a {}
-	.widget_archive select {}
-	.widget_archive option {}
+/* meta widget */
+.widget_meta {
+}
 
-	/* tag-cloud widget */
-	.widget_links {}
-	.widget_links li:after {}
-	.widget_links li:before {}
-	.widget_tag_cloud {
+.widget_meta ul {
+}
 
-    }
-	.widget_tag_cloud a {}
-	.widget_tag_cloud a:after {}
-	.widget_tag_cloud a:before {}
+.widget_meta ul li {
+}
 
-	/* calendar widget */
-	.widget_calendar {}
-	#calendar_wrap {}
-	#calendar_wrap th {}
-	#calendar_wrap td {}
-	#wp-calendar tr td {}
-	#wp-calendar caption {}
-	#wp-calendar a {}
-	#wp-calendar #today {}
-	#wp-calendar #prev {}
-	#wp-calendar #next {}
-	#wp-calendar #next a {}
-	#wp-calendar #prev a {}
+.widget_meta ul li a {
+}
 
-	/* category widget */
-	.widget_categories {}
-	.widget_categories ul {}
-	.widget_categories ul li {}
-	.widget_categories ul ul.children {}
-	.widget_categories a {}
-	.widget_categories select{}
-	.widget_categories select#cat {}
-	.widget_categories select.postform {}
-	.widget_categories option {}
-	.widget_categories .level-0 {}
-	.widget_categories .level-1 {}
-	.widget_categories .level-2 {}
-	.widget_categories .level-3 {}
+/* pages widget */
+.widget_pages {
+}
 
-	/* recent-comments widget */
-	.recentcomments {}
-	#recentcomments {}
-	#recentcomments li {}
-	#recentcomments li a {}
-	.widget_recent_comments {}
+.widget_pages ul {
+}
 
-	/* search widget */
-	#searchform {
+.widget_pages ul li {
+}
 
-        margin-bottom: 0;
-        position: relative;
+.widget_pages ul li a {
+}
 
-        input{
-            margin: 0;
-            width: 100%;
-            padding-right: 30px;
-        }
+/* recent-posts widget */
+.widget_recent_entries {
+}
 
-        #searchsubmit{
-            border: none;
-            background: none;
-            color:  #999999;
-            position: absolute;
-            top: 0px;
-            right: 0;
-            padding: 7px;
-        }
+.widget_recent_entries ul {
+}
 
-    }
-	.widget_search {}
-	.screen-reader-text {}
+.widget_recent_entries ul li {
+}
 
-	/* text widget */
-	.textwidget {}
-	.widget_text {}
-	.textwidget p {}
+.widget_recent_entries ul li a {
+}
+
+/* archives widget */
+.widget_archive {
+}
+
+.widget_archive ul {
+}
+
+.widget_archive ul li {
+}
+
+.widget_archive ul li a {
+}
+
+.widget_archive select {
+}
+
+.widget_archive option {
+}
+
+/* tag-cloud widget */
+.widget_links {
+}
+
+.widget_links li:after {
+}
+
+.widget_links li:before {
+}
+
+.widget_tag_cloud {
+
+}
+
+.widget_tag_cloud a {
+}
+
+.widget_tag_cloud a:after {
+}
+
+.widget_tag_cloud a:before {
+}
+
+/* calendar widget */
+.widget_calendar {
+}
+
+#calendar_wrap {
+}
+
+#calendar_wrap th {
+}
+
+#calendar_wrap td {
+}
+
+#wp-calendar tr td {
+}
+
+#wp-calendar caption {
+}
+
+#wp-calendar a {
+}
+
+#wp-calendar #today {
+}
+
+#wp-calendar #prev {
+}
+
+#wp-calendar #next {
+}
+
+#wp-calendar #next a {
+}
+
+#wp-calendar #prev a {
+}
+
+/* category widget */
+.widget_categories {
+}
+
+.widget_categories ul {
+}
+
+.widget_categories ul li {
+}
+
+.widget_categories ul ul.children {
+}
+
+.widget_categories a {
+}
+
+.widget_categories select {
+}
+
+.widget_categories select#cat {
+}
+
+.widget_categories select.postform {
+}
+
+.widget_categories option {
+}
+
+.widget_categories .level-0 {
+}
+
+.widget_categories .level-1 {
+}
+
+.widget_categories .level-2 {
+}
+
+.widget_categories .level-3 {
+}
+
+/* recent-comments widget */
+.recentcomments {
+}
+
+#recentcomments {
+}
+
+#recentcomments li {
+}
+
+#recentcomments li a {
+}
+
+.widget_recent_comments {
+}
+
+/* search widget */
+#searchform {
+
+	margin-bottom: 0;
+	position: relative;
+
+	input {
+		margin: 0;
+		width: 100%;
+		padding-right: 30px;
+	}
+
+	#searchsubmit {
+		border: none;
+		background: none;
+		color: #999999;
+		position: absolute;
+		top: 0px;
+		right: 0;
+		padding: 7px;
+	}
+
+}
+
+.widget_search {
+}
+
+.screen-reader-text {
+}
+
+/* text widget */
+.textwidget {
+}
+
+.widget_text {
+}
+
+.textwidget p {
+}
 
 /*********************
 CONTENT STYLES
@@ -310,15 +505,19 @@ mobile. Make sure to double check these!
 	ul {
 		li {
 			a {
-				&:hover {}
+				&:hover {
+				}
 			}
 			/*
 			be careful with the depth of your menus.
 			it's very rare to have multi-depth menus in
 			the footer.
 			*/
-			ul {}
+			ul {
+			}
 		}
 	}
-} /* end .footer-links */
+}
+
+/* end .footer-links */
 

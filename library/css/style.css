@@ -861,7 +861,7 @@ a:hover {
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); }
 
-.img-circle {
+.img-circle, .community img {
   -webkit-border-radius: 500px;
   -moz-border-radius: 500px;
   border-radius: 500px; }
@@ -7088,13 +7088,13 @@ a, a:visited {
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-  font-family: "Droid sans", Helvetica, Arial, sans-serif;
+  font-family: "arvo", Helvetica, sans-serif;
   text-rendering: optimizelegibility;
   font-weight: 500;
   /*
-  if you're going to use webfonts, be sure to check your weights
-  http://css-tricks.com/watch-your-font-weight/
-  */
+    if you're going to use webfonts, be sure to check your weights
+    http://css-tricks.com/watch-your-font-weight/
+    */
   /* removing text decoration from all headline links */ }
   h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
     text-decoration: none; }
@@ -7226,11 +7226,11 @@ and more scalable.
       text-decoration: none;
       padding: 10px 10px;
       /*
-      remember this is for mobile ONLY, so there's no need
-      to even declare hover styles here, you can do it in
-      the style.scss file where it's relevant. We want to
-      keep this file as small as possible!
-      */ }
+        remember this is for mobile ONLY, so there's no need
+        to even declare hover styles here, you can do it in
+        the style.scss file where it's relevant. We want to
+        keep this file as small as possible!
+        */ }
     .nav li ul.sub-menu,
     .nav li ul.children {
       margin-left: 0; }
@@ -7290,7 +7290,7 @@ ACTIONS STYLES
   .actions li {
     height: 350px;
     margin-left: 20px;
-    border: 1px solid #5F2E7E;
+    border: 1px solid #739705;
     position: relative;
     padding: 10px;
     background-color: white; }
@@ -7298,34 +7298,35 @@ ACTIONS STYLES
       margin-left: 0; }
     .actions li h1 {
       font-family: "arvo", Helvetica, sans-serif;
-      height: 106px; }
+      height: 106px;
+      overflow: hidden; }
     .actions li img {
       float: right;
       width: 100px; }
     .actions li.workshops {
-      border-color: #3D9A33; }
+      border-color: #05c6b4; }
       .actions li.workshops a {
-        background-color: #3D9A33; }
+        background-color: #05c6b4; }
         .actions li.workshops a img {
           padding-top: 40px; }
         .actions li.workshops a:hover {
-          background-color: #186410; }
+          background-color: #049487; }
           .actions li.workshops a:hover .logo {
             background-image: url("../images/workshops-logo-light.png"); }
     .actions li.training {
-      border-color: #B93D43; }
+      border-color: #ff7300; }
       .actions li.training a {
-        background-color: #B93D43; }
+        background-color: #ff7300; }
         .actions li.training a img {
           padding-top: 35px; }
         .actions li.training a:hover {
-          background-color: #781419; }
+          background-color: #cc5c00; }
     .actions li a {
       display: block;
       color: white;
       position: absolute;
       bottom: 0;
-      background-color: #5F2E7E;
+      background-color: #98C807;
       padding: 20px;
       width: 100%;
       left: 0;
@@ -7335,7 +7336,7 @@ ACTIONS STYLES
       -o-transition: all 0.5s linear;
       transition: all 0.5s linear; }
       .actions li a:hover {
-        background-color: #380F52;
+        background-color: #739705;
         color: white; }
 
 /*********************
@@ -7382,7 +7383,12 @@ POSTS & CONTENT STYLES
   font-size: 35px;
   font-weight: bold;
   text-align: center;
-  margin: 20px 0; }
+  padding: 30px 0; }
+
+.news h3, .news .h3 {
+  font-size: 25px;
+  line-height: 30px;
+  margin: 0 0 11px 0; }
 
 .invitation .invitation-list {
   list-style-type: none;
@@ -7400,17 +7406,10 @@ POSTS & CONTENT STYLES
   -moz-transition: all 0.5s linear;
   -o-transition: all 0.5s linear;
   transition: all 0.5s linear; }
-  .invitation .invitation-button.create a {
-    background-image: url("../images/get-involved-create.png"); }
-  .invitation .invitation-button.involve a {
-    background-image: url("../images/get-involved-involve.png"); }
   .invitation .invitation-button a {
     color: white;
     display: block;
-    padding: 20px;
-    background-image: url("../images/get-involved-discussion.png");
-    background-position: 35px 50%;
-    background-repeat: no-repeat; }
+    padding: 20px; }
   .invitation .invitation-button:hover {
     background-color: #049487;
     color: white; }
@@ -7466,11 +7465,11 @@ POSTS & CONTENT STYLES
 /* entry content */
 .entry-content {
   /*
-  image alignment on a screen this size may be
-  a bit difficult. It's set to start aligning
-  and floating images at the next breakpoint,
-  but it's up to you. Feel free to change it up.
-  */ }
+    image alignment on a screen this size may be
+    a bit difficult. It's set to start aligning
+    and floating images at the next breakpoint,
+    but it's up to you. Feel free to change it up.
+    */ }
   .entry-content dd {
     margin-left: 0;
     font-size: 0.9em;
@@ -7551,8 +7550,84 @@ PEOPLE STYLES
     opacity: 1;
     display: block; }
 
+.community .community-member {
+  display: block; }
 .community img {
-  width: 100px; }
+  width: 100px;
+  box-shadow: 0 0 0 2px white, 0 0 0 5px #515665;
+  margin: 0 5px; }
+.community .popover {
+  background-color: #515665;
+  color: white;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+  .community .popover .popover-title {
+    background-color: #515665;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "arvo", Helvetica, sans-serif; }
+  .community .popover .arrow:after {
+    border-bottom-color: #515665; }
+
+/*********************
+WORKSHOPS STYLES
+*********************/
+.workshop-link-list {
+  list-style-type: none; }
+  .workshop-link-list .workshop-list-item {
+    height: 150px;
+    font-family: "arvo", Helvetica, sans-serif;
+    text-align: center;
+    background: #cccccc;
+    margin-bottom: 15px;
+    display: table;
+    padding: 10px; }
+    .workshop-link-list .workshop-list-item:nth-child(4n+1) {
+      background-color: #ff7300;
+      -webkit-transition: background-color 0.5s linear;
+      -moz-transition: background-color 0.5s linear;
+      -o-transition: background-color 0.5s linear;
+      transition: background-color 0.5s linear;
+      margin-left: 0; }
+      .workshop-link-list .workshop-list-item:nth-child(4n+1):hover {
+        background-color: gray; }
+    .workshop-link-list .workshop-list-item:nth-child(4n+2) {
+      background-color: #b7d500;
+      -webkit-transition: background-color 0.5s linear;
+      -moz-transition: background-color 0.5s linear;
+      -o-transition: background-color 0.5s linear;
+      transition: background-color 0.5s linear; }
+      .workshop-link-list .workshop-list-item:nth-child(4n+2):hover {
+        background-color: #6b6b6b; }
+    .workshop-link-list .workshop-list-item:nth-child(4n+3) {
+      background-color: #05c6b4;
+      -webkit-transition: background-color 0.5s linear;
+      -moz-transition: background-color 0.5s linear;
+      -o-transition: background-color 0.5s linear;
+      transition: background-color 0.5s linear;
+      margin-left: 0; }
+      .workshop-link-list .workshop-list-item:nth-child(4n+3):hover {
+        background-color: #666666; }
+    .workshop-link-list .workshop-list-item:nth-child(4n+4) {
+      background-color: #ffbc1a;
+      -webkit-transition: background-color 0.5s linear;
+      -moz-transition: background-color 0.5s linear;
+      -o-transition: background-color 0.5s linear;
+      transition: background-color 0.5s linear; }
+      .workshop-link-list .workshop-list-item:nth-child(4n+4):hover {
+        background-color: #8d8d8c; }
+    .workshop-link-list .workshop-list-item a {
+      display: table-cell;
+      vertical-align: middle;
+      color: white;
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: bold; }
 
 /*********************
 TAGCLOUD STYLES
@@ -7862,6 +7937,81 @@ view.
   vertical-align: middle; }
 
 /*
+MOBILE DEVICES
+This is for devices like an iPhone.
+*/
+@media only screen and (min-device-width: 321px) {
+  /******************************************************************
+  Site Name: school of open
+  Author: Erika Pogorelc
+  
+  Stylesheet: 321px and Up Stylesheet
+  
+  This stylesheet is loaded for larger devices. It's set to
+  481px because at 480px it would load on a landscaped iPhone.
+  This isn't ideal because then you would be loading all those
+  extra styles on that same mobile connection.
+  
+  A word of warning. This size COULD be a larger mobile device,
+  so you still want to keep it pretty light and simply expand
+  upon your base.scss styles.
+  
+  ******************************************************************/
+  body {
+    padding: 0; }
+
+  /*********************
+  JUMBOTRON
+  *********************/
+  .navbar-fixed-top {
+    margin-bottom: 0; }
+
+  /*********************
+  JUMBOTRON
+  *********************/
+  .jumbotron {
+    padding-top: 0;
+    text-align: center; }
+    .jumbotron img {
+      width: 100px;
+      margin: 10px auto;
+      display: block; }
+
+  /*********************
+  ACTIONS MENU
+  *********************/
+  .actions li {
+    margin: 15px 0; }
+
+  /*********************
+  SECTION ARROWS
+  *********************/
+  .section-background.whitesmoke .wrap:after, .section-background.whitesmoke .wrap:before {
+    top: -51px; }
+  .section-background .wrap:after, .section-background .wrap:before {
+    top: -51px; }
+
+  /*********************
+  INVITATION
+  *********************/
+  .invitation .invitation-button {
+    width: 100%;
+    margin: 10px 0; }
+    .invitation .invitation-button a {
+      background-image: none; }
+    .invitation .invitation-button.create a {
+      background-image: none; }
+    .invitation .invitation-button.involve a {
+      background-image: none; }
+
+  /*********************
+  WORKSHOPS STYLES
+  *********************/
+  .workshop-link-list {
+    margin-left: 0; }
+    .workshop-link-list .workshop-list-item {
+      width: 100%; } }
+/*
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
 larger than an iPhone but smaller than a tablet. Let's call them
@@ -7884,6 +8034,12 @@ tweeners.
   upon your base.scss styles.
   
   ******************************************************************/
+  body {
+    padding: 0; }
+
+  .jumbotron img {
+    width: 150px; }
+
   /*********************
   NAVIGATION STYLES
   *********************/
@@ -7991,7 +8147,7 @@ you can add resource intensive styles.
     width: 31.491712705%; }
 
   /* 30.75%; } /* grid_4  */
-  .fivecol {
+  .fivecol, .workshop-link-list .workshop-list-item {
     width: 40.055248616%; }
 
   /* 39.45%; } /* grid_5  */
@@ -8023,7 +8179,7 @@ you can add resource intensive styles.
     width: 99.999999993%; }
 
   /* 100%;   } /* grid_12 */
-  .onecol, .twocol, .threecol, #content::before, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
+  .onecol, .twocol, .threecol, #content::before, .fourcol, .fivecol, .workshop-link-list .workshop-list-item, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
     position: relative;
     float: left;
     margin-left: 2.762430939%; }
@@ -8125,6 +8281,30 @@ you can add resource intensive styles.
 
   /* end .nav */
   /*********************
+  JUMBOTRON
+  *********************/
+  .jumbotron {
+    padding-top: 70px; }
+    .jumbotron img {
+      width: 100%; }
+
+  /*********************
+  ACTIONS MENU
+  *********************/
+  .actions li {
+    margin-left: 20px; }
+    .actions li:first-child {
+      margin-left: 0; }
+
+  /*********************
+  SECTION ARROWS
+  *********************/
+  .section-background.whitesmoke .wrap:after, .section-background.whitesmoke .wrap:before {
+    top: -51px; }
+  .section-background .wrap:after, .section-background .wrap:before {
+    top: -40px; }
+
+  /*********************
   SIDEBARS & ASIDES
   *********************/
   .sidebar {
@@ -8211,7 +8391,27 @@ you can add resource intensive styles.
     padding-top: 60px; }
 
   .excerpt-wraper {
-    overflow: hidden; } }
+    overflow: hidden; }
+
+  /*********************
+  JUMBOTRON
+  *********************/
+  .jumbotron {
+    padding-top: 120px; }
+
+  /*********************
+  INVITATION BUTTONS
+  *********************/
+  .invitation .invitation-button {
+    float: right !important; }
+    .invitation .invitation-button a {
+      background-image: url("../images/get-involved-discussion.png");
+      background-position: 35px 50%;
+      background-repeat: no-repeat; }
+    .invitation .invitation-button.create a {
+      background-image: url("../images/get-involved-create.png"); }
+    .invitation .invitation-button.involve a {
+      background-image: url("../images/get-involved-involve.png"); } }
 /*
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.
@@ -8226,7 +8426,9 @@ This is for the larger monitors and possibly full screen viewers.
   You can add some advanced styles here if you like. This kicks in
   on larger screens.
   
-  ******************************************************************/ }
+  ******************************************************************/
+  body {
+    background-color: black; } }
 /*
 RETINA (2x RESOLUTION DEVICES)
 This applies to the retina iPhone (4s) and iPad (2,3) along with

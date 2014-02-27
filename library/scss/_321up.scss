@@ -1,0 +1,126 @@
+/******************************************************************
+Site Name: school of open
+Author: Erika Pogorelc
+
+Stylesheet: 321px and Up Stylesheet
+
+This stylesheet is loaded for larger devices. It's set to
+481px because at 480px it would load on a landscaped iPhone.
+This isn't ideal because then you would be loading all those
+extra styles on that same mobile connection.
+
+A word of warning. This size COULD be a larger mobile device,
+so you still want to keep it pretty light and simply expand
+upon your base.scss styles.
+
+******************************************************************/
+
+body{
+  padding: 0;
+}
+
+/*********************
+JUMBOTRON
+*********************/
+.navbar-fixed-top{
+	margin-bottom: 0;
+}
+
+/*********************
+JUMBOTRON
+*********************/
+
+.jumbotron {
+  padding-top: 0;
+  text-align: center;
+
+	img {
+	  width: 100px;
+	  margin: 10px auto;
+	  display: block;
+
+	}
+
+}
+
+
+/*********************
+ACTIONS MENU
+*********************/
+
+.actions {
+  	li {
+	  margin: 15px 0;
+	}
+}
+
+/*********************
+SECTION ARROWS
+*********************/
+
+.section-background {
+  &.whitesmoke{
+	.wrap {
+
+	  &:after, &:before{
+
+		top: -51px;
+
+	  }
+
+	}
+  }
+
+  .wrap {
+
+	&:after, &:before{
+
+	  top: -51px;
+
+	}
+
+  }
+
+}
+
+/*********************
+INVITATION
+*********************/
+
+.invitation {
+
+  .invitation-button{
+	width: 100%;
+	margin: 10px 0;
+
+	a {
+	  background-image:none;
+	}
+
+	&.create a {
+	  background-image: none;
+	}
+
+	&.involve a {
+	  background-image: none;
+	}
+
+  }
+
+}
+
+/*********************
+WORKSHOPS STYLES
+*********************/
+.workshop-link-list {
+
+	margin-left: 0;
+
+	.workshop-list-item {
+
+		width: 100%;
+
+	}
+
+
+}

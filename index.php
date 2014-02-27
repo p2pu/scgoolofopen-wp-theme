@@ -179,7 +179,7 @@
                                     <li class="first pull-left">
                                         <a href="<?php echo esc_attr($term_meta['profile']); ?>"
                                             class="community-member" target="_blank"
-                                           data-toggle="popover" data-placement="left"
+                                           data-toggle="popover" data-placement="bottom"
                                            data-content="<?php echo $term->description; ?>"
                                            data-original-title="<?php echo $term->name; ?>"
                                            data-trigger="hover"

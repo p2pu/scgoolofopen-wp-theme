@@ -15,7 +15,17 @@ upon your base.scss styles.
 
 ******************************************************************/
 
+body{
+  padding: 0;
+}
 
+.jumbotron {
+
+  img {
+	width: 150px;
+  }
+
+}
 /*********************
 NAVIGATION STYLES
 *********************/

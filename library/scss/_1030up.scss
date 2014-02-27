@@ -9,8 +9,46 @@ be seen on the Desktop.
 
 ******************************************************************/
 
-body { padding-top: 60px }
+body { padding-top: 60px;}
 
 .excerpt-wraper {
         overflow: hidden;
     }
+
+
+/*********************
+JUMBOTRON
+*********************/
+.jumbotron {
+
+  padding-top: 120px;
+
+}
+
+/*********************
+INVITATION BUTTONS
+*********************/
+
+.invitation {
+
+	.invitation-button {
+		@extend .tencol;
+		float: right !important;
+
+		a {
+
+			background-image: url("../images/get-involved-discussion.png");
+			background-position: 35px 50%;
+			background-repeat: no-repeat;
+		}
+
+		&.create a {
+			background-image: url("../images/get-involved-create.png");
+		}
+
+		&.involve a {
+			background-image: url("../images/get-involved-involve.png");
+		}
+	}
+
+}
