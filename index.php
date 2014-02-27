@@ -217,7 +217,7 @@
                     );
                 wp_nav_menu($defaults); ?>
             </div>
-            <?php query_posts('name=training-programs'); ?>
+            <?php query_posts('name=workshops'); ?>
             <?php while (have_posts()) : the_post(); ?>
 
                 <div class="fivecol first">
