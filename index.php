@@ -2,7 +2,7 @@
 
 <div id="content" class="index">
 
-    <div class="jumbotron clearfix">
+    <div id="jumbotron" class="jumbotron clearfix">
 
         <div class="wrap">
 
@@ -31,7 +31,8 @@
         </div>
 
     </div>
-    <div class="actions-wrapper">
+
+    <div id="actions" class="actions-wrapper">
 
         <div class="section wrap clearfix actions-section">
             <?php $defaults =
@@ -48,11 +49,11 @@
 
     </div>
 
-    <div class="section-background clearfix">
+    <div id="news-involved" class="section-background clearfix">
 
         <div id="inner-content" class="wrap clearfix">
 
-            <div id="main" class="sixcol first" role="main">
+            <div id="news" class="sixcol first news" role="main">
 
                 <h1 class="section-heading"><?php echo __('News'); ?></h1>
 
@@ -64,34 +65,12 @@
 
                         <header class="article-header">
 
-                            <h2 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-                            <p class="byline vcard"><?php
-                                printf( __( 'by <span class="author">%3$s</span> on <time class="updated" datetime="%1$s" pubdate>%2$s</time> <span class="amp">&middot;</span> <span class="comments-count" ><a href="%5$s#disqus_thread">%4$s Comments</a></span>. ', 'bonestheme' ),
-                                    get_the_time( 'Y-m-j' ),
-                                    get_the_time( __( 'F j, Y', 'bonestheme' ) ),
-                                    bones_get_the_author_posts_link(),
-                                    wp_count_comments( $id )->approved,
-                                    get_permalink( $id )
-                                );
-                                if ( is_user_logged_in() ) {
-                                    echo '<a href="' . get_edit_post_link( $id, $context ) . '"><small>[EDIT]</small></a>';
-                                }
-                                ?></p>
+                            <h3 class="h3"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
 
                         </header>
 
                         <section class="entry-content clearfix">
 
-                            <?php
-                            if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-                                ?>
-                                <div class="thumbnail-wrapper img-polaroid pull-left">
-                                <a href="<?php the_permalink() ?>">
-                                    <?php echo get_the_post_thumbnail( $id, array( 160, 160) ); ?>
-                                </a>
-                                </div><?php
-                                //echo get_the_post_thumbnail( $id );
-                            } ?>
                             <div class="excerpt-wraper">
                                 <?php the_excerpt(); ?>
                             </div>
@@ -138,7 +117,7 @@
 
             </div>
 
-            <div class="sixcol">
+            <div id="get-involved" class="sixcol">
 
                 <h1 class="section-heading"><?php echo __('Get Involved'); ?></h1>
 
@@ -157,7 +136,7 @@
 
     </div>
 
-    <div class="section-background whitesmoke clearfix">
+    <div id="community" class="section-background whitesmoke clearfix">
 
         <div class="wrap clearfix">
 
@@ -199,13 +178,14 @@
                                 if (esc_attr($term_meta['community']) == $post->post_name){?>
                                     <li class="first pull-left">
                                         <a href="<?php echo esc_attr($term_meta['profile']); ?>"
-                                            class="thumbnail" target="_blank"
-                                           data-toggle="popover" data-placement="top"
+                                            class="community-member" target="_blank"
+                                           data-toggle="popover" data-placement="left"
                                            data-content="<?php echo $term->description; ?>"
                                            data-original-title="<?php echo $term->name; ?>"
                                            data-trigger="hover"
                                            data-html="true">
-                                            <img src="<?php echo esc_attr($term_meta['image']) ? esc_attr($term_meta['image']) : 'http://placehold.it/100x100'; ?>" alt=""/>
+                                            <img src="<?php echo esc_attr($term_meta['image']) ? esc_attr($term_meta['image']) : 'http://placehold.it/100x100'; ?>"
+                                                 alt="<?php echo $term->name; ?>" />
                                         </a>
                                     </li><?php
                                 }
@@ -225,30 +205,58 @@
 
         <div class="wrap clearfix">
             <div class="twelvecol">
-                <h1 class="section-heading"><?php echo _('Training Programs'); ?></h1>
+                <h1 class="section-heading"><?php echo _('Workshops'); ?></h1>
             </div>
-            <div class="sixcol first">
-                Sed dignissim vulputate metus et posuere. Nullam tincidunt blandit risus, non pulvinar ligula
-                tempor interdum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                turpis egestas. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus risus
-                nisl, adipiscing vel neque id, pharetra viverra nulla. Vivamus id est porttitor, placerat dui
-                quis, porta risus. Ut bibendum ligula leo, sed pellentesque lectus lobortis nec. Nam euismod
-                lectus sed porta sollicitudin. Nunc fringilla lacinia volutpat. Praesent purus diam, luctus ac
-                semper eget, fringilla sit amet magna. Fusce et elit augue. Aenean euismod sodales augue, vel
-                lobortis lacus bibendum ac. Integer pulvinar tempus est, ac fringilla quam egestas id.
+            <div class="sevencol first">
+                <?php $defaults =
+                    array(
+                        'theme_location' => 'Training programs Menu',
+                        'container'       => 'ul',
+                        'container_class' => 'workshop-link-item',
+                        'menu_class' => 'workshop-link-list clearfix first',
+                    );
+                wp_nav_menu($defaults); ?>
+            </div>
+            <?php query_posts('name=training-programs'); ?>
+            <?php while (have_posts()) : the_post(); ?>
+
+                <div class="fivecol first">
+                    <p><?php the_content(); ?></p>
+                </div>
+
+            <?php endwhile;?>
+
+        </div>
+    </div>
+
+    <div id="training" class="section-background whitesmoke clearfix">
+        <div class="wrap clearfix">
+            <div class="twelvecol">
+                <h1 class="section-heading"><?php echo _('Training programs') ?></h1>
+            </div>
+            <div class="fivecol first">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum in magna in nibh accumsan adipiscing ut eu leo.
+                Aenean eu ipsum adipiscing, gravida mi scelerisque, faucibus nisi.
+                Sed id luctus lorem. Duis ultricies, ligula non euismod mattis,
+                sapien neque cursus mi, vel vulputate nibh metus in eros.
+                Etiam ut felis sit amet nunc posuere malesuada.
+                Phasellus eleifend orci et vestibulum porttitor.
+                Quisque pellentesque sem nulla, quis eleifend est suscipit ac.
+                Cras vitae ante mauris. Integer eleifend dictum nisi adipiscing pharetra.
+                Donec sed fermentum quam.
+            </div>
+
+            <div class="sevencol">
+
             </div>
         </div>
+
+
     </div>
 
 
 
-
-
-
-
-
-
-
-			</div>
+</div>
 
 <?php get_footer(); ?>
