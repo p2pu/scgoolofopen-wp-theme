@@ -580,6 +580,10 @@ SIDEBARS & ASIDES
 /*********************
 CONTENT STYLES
 *********************/
+#main {
+  padding-top: 60px;
+  padding-bottom: 0; }
+
 /*********************
 FOOTER STYLES
 *********************/
@@ -631,6 +635,9 @@ INVITATION BUTTONS
     background-image: url("../images/get-involved-create.png"); }
   .invitation .invitation-button.involve a {
     background-image: url("../images/get-involved-involve.png"); }
+
+.sidebar .social-icon {
+  font-size: 50px; }
 
 /* 
 you can call the larger styles if you want, but there's really no need 

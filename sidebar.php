@@ -19,11 +19,13 @@
 
                     <div class="widget">
                         <h4 class="widgettitle"><?php echo _('Follow'); ?></h4>
-                        <ul class="clearfix">
-                            <li class="onecol"><a href="#"><i class="icon-twitter-sign"></i></a></li>
-                            <li class="onecol"><a href="#"><i class="icon-facebook-sign"></i></a></li>
-                            <li class="onecol"><a href="#"><i class="icon-facebook-sign"></i></a></li>
-                            <li class="onecol"><a href="#"><i class="icon-rss-sign"></i></a></li>
+                        <ul class="social-icons-list clearfix">
+                            <li>
+                                <a href="#" class="social-icon"><i class="fa fa-twitter-square"></i></a></li>
+                            <li>
+                                <a href="#" class="social-icon"><i class="fa fa-facebook-square"></i></a></li>
+                            <li>
+                                <a href="#" class="social-icon"><i class="fa fa-rss-square"></i></a></li>
                         </ul>
                     </div>
                     <div class="widget hidden-phone">

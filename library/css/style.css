@@ -7431,13 +7431,15 @@ POSTS & CONTENT STYLES
   #content.index::before {
     background: none; }
 
-#main {
-  padding-top: 60px;
-  margin-bottom: 0; }
-
 /* end .hentry */
 /* want to style individual post classes? Booya! */
 /* post by id (i.e. post-3) */
+.post-footer.social {
+  background-color: white;
+  width: 100%;
+  border: 1px solid #999;
+  padding: 15px; }
+
 /* general post style */
 /* general article on a page style */
 /* general style on an attatchment */
@@ -7722,9 +7724,14 @@ COMMENT STYLES
 ******************************************************************/
 /* h3 comment title */
 #comments {
+  margin-top: 100px;
   /* number of comments span */ }
 
+#comment-nav ul {
+  list-style-type: none; }
+
 .commentlist {
+  margin-left: 0;
   /* general comment classes */
   /* vcard */
   /* end .commentlist .vcard */
@@ -7886,7 +7893,7 @@ SIDEBARS & ASIDES
       margin: 0;
       width: 100%;
       padding-right: 30px;
-      border: 1px solid #999;
+      border: 1px solid #E7E6E1;
       border-radius: 0; }
     .sidebar #searchform #searchsubmit {
       border: none;
@@ -7896,6 +7903,19 @@ SIDEBARS & ASIDES
       top: 0px;
       right: 0;
       padding: 7px; }
+  .sidebar .social-icons-list li {
+    float: left;
+    margin-right: 15px; }
+  .sidebar .social-icon {
+    font-size: 50px;
+    color: #515665;
+    display: block;
+    -webkit-transition: color 0.5s linear;
+    -moz-transition: color 0.5s linear;
+    -o-transition: color 0.5s linear;
+    transition: color 0.5s linear; }
+    .sidebar .social-icon:hover {
+      color: #05c6b4; }
 
 .widgettitle {
   border-bottom: 1px solid #ffffff; }
@@ -8010,7 +8030,20 @@ This is for devices like an iPhone.
   .workshop-link-list {
     margin-left: 0; }
     .workshop-link-list .workshop-list-item {
-      width: 100%; } }
+      width: 100%; }
+
+  /*********************
+  SIDEBAR STYLES
+  *********************/
+  #main {
+    padding: 0 15px 700px 0; }
+
+  .sidebar {
+    position: absolute;
+    bottom: 0;
+    background-color: #E7E6E1; }
+    .sidebar .social-icon {
+      font-size: 20px; } }
 /*
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
@@ -8354,6 +8387,10 @@ you can add resource intensive styles.
   /*********************
   CONTENT STYLES
   *********************/
+  #main {
+    padding-top: 60px;
+    padding-bottom: 0; }
+
   /*********************
   FOOTER STYLES
   *********************/
@@ -8411,7 +8448,10 @@ you can add resource intensive styles.
     .invitation .invitation-button.create a {
       background-image: url("../images/get-involved-create.png"); }
     .invitation .invitation-button.involve a {
-      background-image: url("../images/get-involved-involve.png"); } }
+      background-image: url("../images/get-involved-involve.png"); }
+
+  .sidebar .social-icon {
+    font-size: 50px; } }
 /*
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.
@@ -8426,9 +8466,7 @@ This is for the larger monitors and possibly full screen viewers.
   You can add some advanced styles here if you like. This kicks in
   on larger screens.
   
-  ******************************************************************/
-  body {
-    background-color: black; } }
+  ******************************************************************/ }
 /*
 RETINA (2x RESOLUTION DEVICES)
 This applies to the retina iPhone (4s) and iPad (2,3) along with

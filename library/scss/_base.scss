@@ -766,10 +766,7 @@ POSTS & CONTENT STYLES
 
 }
 
-#main {
-	padding-top: 60px;
-	margin-bottom: 0;
-}
+
 
 .hentry {
 
@@ -804,6 +801,14 @@ POSTS & CONTENT STYLES
 .post {
 }
 
+.post-footer.social {
+
+	background-color: white;
+	width: 100%;
+	border: 1px solid #999;
+	padding: 15px;
+
+}
 /* general post style */
 .page {
 }
@@ -1290,15 +1295,17 @@ COMMENT STYLES
 /* h3 comment title */
 #comments {
 
+	margin-top: 100px;
 	/* number of comments span */
 	span {
 	}
 
 }
 
-.comment-nav {
+#comment-nav {
 
 	ul {
+		list-style-type: none;
 
 		li {
 		}
@@ -1307,6 +1314,8 @@ COMMENT STYLES
 }
 
 .commentlist {
+
+	margin-left: 0;
 
 	li {
 		position: relative;
@@ -1623,7 +1632,7 @@ SIDEBARS & ASIDES
 			margin: 0;
 			width: 100%;
 			padding-right: 30px;
-			border: 1px solid #999;
+			border: 1px solid #E7E6E1;
 			border-radius: 0;
 		}
 
@@ -1637,6 +1646,26 @@ SIDEBARS & ASIDES
 			padding: 7px;
 		}
 
+	}
+
+	.social-icons-list{
+		li{
+
+			float: left;
+			margin-right: 15px;
+		}
+
+	}
+
+	.social-icon{
+		font-size: 50px;
+		color: $slate;
+		display: block;
+		@include transition(color 0.5s linear);
+
+		&:hover{
+			color: $cyan;
+		}
 	}
 }
 
