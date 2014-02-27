@@ -257,7 +257,8 @@ function additional_menus() {
     $locations = array(
         'Main Nav' => __( 'Main navigation' ),
         'Involvement Menu' => __( 'Display buttons for involvement links', 'text_domain' ),
-        'Jumbotrone Menu' => __( 'Jumbotrone', 'text_domain' ),
+        'Jumbotrone Menu' => __( 'Jumbotron', 'text_domain' ),
+        'Training programs Menu' => __( 'Training programs Menu', 'text_domain' ),
     );
     register_nav_menus( $locations );
 
