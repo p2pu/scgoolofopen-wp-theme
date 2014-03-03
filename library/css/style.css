@@ -7919,6 +7919,9 @@ SIDEBARS & ASIDES
     transition: color 0.5s linear; }
     .sidebar .social-icon:hover {
       color: #05c6b4; }
+  .sidebar span.post-date {
+    display: block;
+    font-size: 12px; }
 
 .widgettitle {
   border-bottom: 1px solid #ffffff; }
