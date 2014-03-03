@@ -6,8 +6,10 @@
 							<?php bones_footer_links(); ?>
 					</nav>
                     <div class="source-org copyright threecol pull-right">
-                        <img src="<?php echo get_template_directory_uri() ?>/library/images/cc-icons.png"
-                             alt="CC Icon" class="cc-icons"/>
+                        <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
+                            <img src="<?php echo get_template_directory_uri() ?>/library/images/cc-icons.png"
+                                 alt="CC Icon" class="cc-icons"/>
+                        </a>
                         <p class="cc-text">
                          <?php echo _('
                             Except where otherwise noted, content on this site is licensed under a

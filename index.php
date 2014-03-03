@@ -57,7 +57,7 @@
 
                 <h1 class="section-heading"><?php echo __('News'); ?></h1>
 
-                <?php query_posts('category_name=news'); ?>
+                <?php query_posts(array ( 'category_name' => 'news', 'posts_per_page' => 2 )); ?>
 
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -77,27 +77,13 @@
 
                         </section>
 
-                        <footer class="article-footer">
-                            <p class="tags"><?php the_tags( '<span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '' ); ?></p>
-
-                        </footer>
-
                         <?php // comments_template(); // uncomment if you want to use them ?>
 
                     </article>
 
                 <?php endwhile; ?>
 
-                    <?php if ( function_exists( 'bones_page_navi' ) ) { ?>
-                        <?php bones_page_navi(); ?>
-                    <?php } else { ?>
-                        <nav class="wp-prev-next">
-                            <ul class="clearfix">
-                                <li class="prev-link"><?php next_posts_link( __( '&laquo; Older Entries', 'bonestheme' )) ?></li>
-                                <li class="next-link"><?php previous_posts_link( __( 'Newer Entries &raquo;', 'bonestheme' )) ?></li>
-                            </ul>
-                        </nav>
-                    <?php } ?>
+                    <a href="<?php echo get_category_link( get_cat_ID( 'news' ) ); ?> " class="btn btn-primary"><?php echo _('Read All'); ?> </a>
 
                 <?php else : ?>
 

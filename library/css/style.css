@@ -7013,6 +7013,9 @@ body {
 WORDPRESS BODY CLASSES
 style a page via class
 ********************/
+a.btn-primary, a.btn-primary:hover, a.btn-primary:visited {
+  color: white !important; }
+
 /* for sites that are read right to left (i.e. hebrew) */
 /* home page */
 /* blog template page */
@@ -7952,6 +7955,11 @@ it simple because you'll have to
 override these styles for the desktop
 view.
 */
+.footer-nav {
+  float: left; }
+  .footer-nav .menu-item {
+    float: none; }
+
 /* end .footer-links */
 .article-footer .social img {
   width: 50px !important;
