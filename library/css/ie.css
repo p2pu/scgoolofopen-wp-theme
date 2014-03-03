@@ -526,9 +526,13 @@ ACTIONS MENU
 SECTION ARROWS
 *********************/
 .section-background.whitesmoke .wrap:after, .section-background.whitesmoke .wrap:before {
-  top: -51px; }
+  top: 0;
+  margin-top: -40px; }
 .section-background .wrap:after, .section-background .wrap:before {
-  top: -40px; }
+  top: 0;
+  margin-top: -40px; }
+.section-background#courses .wrap {
+  top: -11px; }
 
 /*********************
 SIDEBARS & ASIDES

@@ -7388,7 +7388,8 @@ POSTS & CONTENT STYLES
   font-size: 35px;
   font-weight: bold;
   text-align: center;
-  padding: 30px 0; }
+  padding: 30px 0;
+  margin: 0; }
 
 .news h3, .news .h3 {
   font-size: 25px;
@@ -8452,9 +8453,13 @@ you can add resource intensive styles.
   SECTION ARROWS
   *********************/
   .section-background.whitesmoke .wrap:after, .section-background.whitesmoke .wrap:before {
-    top: -51px; }
+    top: 0;
+    margin-top: -40px; }
   .section-background .wrap:after, .section-background .wrap:before {
-    top: -40px; }
+    top: 0;
+    margin-top: -40px; }
+  .section-background#courses .wrap {
+    top: -11px; }
 
   /*********************
   SIDEBARS & ASIDES

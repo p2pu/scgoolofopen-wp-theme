@@ -202,7 +202,8 @@ SECTION ARROWS
 
 			&:after, &:before {
 
-				top: -51px;
+				top: 0;
+				margin-top: -40px;
 
 			}
 
@@ -212,11 +213,17 @@ SECTION ARROWS
 	.wrap {
 
 		&:after, &:before {
-
-			top: -40px;
+			top: 0;
+			margin-top: -40px;
 
 		}
 
+	}
+
+	&#courses {
+		.wrap {
+			top: -11px;
+		}
 	}
 
 }
