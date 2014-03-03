@@ -191,13 +191,44 @@
 
     </div>
 
-    <div id="workshops" class="section-background white clearfix">
+    <div id="courses" class="section-background white clearfix">
+
+        <div class="wrap clearfix">
+            <div class="twelvecol">
+                <h1 class="section-heading"><?php echo _('Courses'); ?></h1>
+            </div>
+            <div class="sixcol first">
+                <?php $defaults =
+                    array(
+                        'theme_location' => 'Courses Menu',
+                        'container'       => 'nav',
+                        'container_class' => 'courses',
+                        'menu_class' => 'courses-variations'
+                    );
+                wp_nav_menu($defaults); ?>
+            </div>
+
+
+            <?php query_posts('name=courses'); ?>
+            <?php while (have_posts()) : the_post(); ?>
+
+                <div class="fsixcol">
+                    <p><?php the_content(); ?></p>
+                </div>
+
+            <?php endwhile;?>
+            <?php wp_reset_query(); ?>
+
+        </div>
+    </div>
+
+    <div id="workshops" class="section-background whitesmoke clearfix">
 
         <div class="wrap clearfix">
             <div class="twelvecol">
                 <h1 class="section-heading"><?php echo _('Workshops'); ?></h1>
             </div>
-            <div class="sevencol first">
+            <div class="sixcol first">
                 <?php $defaults =
                     array(
                         'theme_location' => 'Training programs Menu',
@@ -210,7 +241,7 @@
             <?php query_posts('name=workshops'); ?>
             <?php while (have_posts()) : the_post(); ?>
 
-                <div class="fivecol first">
+                <div class="sixcol">
                     <p><?php the_content(); ?></p>
                 </div>
 
@@ -220,10 +251,11 @@
         </div>
     </div>
 
-    <div id="training" class="section-background whitesmoke clearfix">
+    <div id="training" class="section-background white clearfix">
         <div class="wrap clearfix">
             <div class="twelvecol">
                 <h1 class="section-heading"><?php echo _('Training programs') ?></h1>
+
             </div>
             <div class="fivecol first">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.

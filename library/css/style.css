@@ -7374,7 +7374,9 @@ POSTS & CONTENT STYLES
     background-color: #F3F4F8; }
     .section-background.whitesmoke .wrap:after, .section-background.whitesmoke .wrap:before {
       border-top-color: white;
-      top: -60px; }
+      top: -60px;
+      right: 40px;
+      left: initial; }
   .section-background.white .wrap:after, .section-background.white .wrap:before {
     border-top-color: #F3F4F8; }
 
@@ -7578,6 +7580,104 @@ PEOPLE STYLES
     font-family: "arvo", Helvetica, sans-serif; }
   .community .popover .arrow:after {
     border-bottom-color: #515665; }
+
+/*********************
+COURSES STYLES
+*********************/
+.courses-variations {
+  list-style-type: none;
+  position: relative; }
+  .courses-variations .menu-item {
+    height: 160px;
+    width: 160px;
+    background: orange;
+    position: relative;
+    display: table;
+    float: left;
+    margin-right: 80px;
+    border: 1px solid #cccccc; }
+    .courses-variations .menu-item:nth-child(4n+1) {
+      background-color: #c3c6ce; }
+      .courses-variations .menu-item:nth-child(4n+1):before {
+        background-color: #a7acb7; }
+      .courses-variations .menu-item:nth-child(4n+1):after {
+        background-color: #8b91a0;
+        -webkit-transition: background-color 0.5s linear;
+        -moz-transition: background-color 0.5s linear;
+        -o-transition: background-color 0.5s linear;
+        transition: background-color 0.5s linear; }
+      .courses-variations .menu-item:nth-child(4n+1):hover:after {
+        background-color: #746e5f; }
+    .courses-variations .menu-item:nth-child(4n+2) {
+      background-color: #82889a; }
+      .courses-variations .menu-item:nth-child(4n+2):before {
+        background-color: #686e81; }
+      .courses-variations .menu-item:nth-child(4n+2):after {
+        background-color: #515665;
+        -webkit-transition: background-color 0.5s linear;
+        -moz-transition: background-color 0.5s linear;
+        -o-transition: background-color 0.5s linear;
+        transition: background-color 0.5s linear; }
+      .courses-variations .menu-item:nth-child(4n+2):hover:after {
+        background-color: #aea99a; }
+    .courses-variations .menu-item:nth-child(4n+3) {
+      background-color: #cad39f; }
+      .courses-variations .menu-item:nth-child(4n+3):before {
+        background-color: #b7c37c; }
+      .courses-variations .menu-item:nth-child(4n+3):after {
+        background-color: #a4b359;
+        -webkit-transition: background-color 0.5s linear;
+        -moz-transition: background-color 0.5s linear;
+        -o-transition: background-color 0.5s linear;
+        transition: background-color 0.5s linear; }
+      .courses-variations .menu-item:nth-child(4n+3):hover:after {
+        background-color: #5b4ca6; }
+    .courses-variations .menu-item:nth-child(4n+4) {
+      background-color: #61677a; }
+      .courses-variations .menu-item:nth-child(4n+4):before {
+        background-color: #4b4f5d; }
+      .courses-variations .menu-item:nth-child(4n+4):after {
+        background-color: #343741;
+        -webkit-transition: background-color 0.5s linear;
+        -moz-transition: background-color 0.5s linear;
+        -o-transition: background-color 0.5s linear;
+        transition: background-color 0.5s linear; }
+      .courses-variations .menu-item:nth-child(4n+4):hover:after {
+        background-color: #cbc8be; }
+    .courses-variations .menu-item:before, .courses-variations .menu-item:after {
+      height: 160px;
+      width: 160px;
+      content: "";
+      position: absolute;
+      border: 1px solid #cccccc; }
+    .courses-variations .menu-item:before {
+      /* Rotate */
+      -webkit-transform: rotate(30deg);
+      -moz-transform: rotate(30deg);
+      -ms-transform: rotate(30deg);
+      -o-transform: rotate(30deg);
+      transform: rotate(30deg); }
+    .courses-variations .menu-item:after {
+      left: 0;
+      -webkit-transform: rotate(-30deg);
+      -moz-transform: rotate(-30deg);
+      -ms-transform: rotate(-30deg);
+      -o-transform: rotate(-30deg);
+      transform: rotate(-30deg); }
+  .courses-variations a {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-family: "arvo", Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    position: relative;
+    z-index: 10; }
+    .courses-variations a:hover {
+      color: #515665; }
+    .courses-variations a:visited {
+      color: white; }
 
 /*********************
 WORKSHOPS STYLES
@@ -7919,7 +8019,7 @@ SIDEBARS & ASIDES
     transition: color 0.5s linear; }
     .sidebar .social-icon:hover {
       color: #05c6b4; }
-  .sidebar span.post-date {
+  .sidebar .post-date {
     display: block;
     font-size: 12px; }
 

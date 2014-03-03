@@ -667,6 +667,8 @@ POSTS & CONTENT STYLES
 			&:after, &:before {
 				border-top-color: $white;
 				top: -60px;
+				right: 40px;
+				left: initial;
 
 			}
 
@@ -1113,6 +1115,96 @@ PEOPLE STYLES
 			}
 
 		}
+	}
+
+}
+/*********************
+COURSES STYLES
+*********************/
+.courses-variations {
+	list-style-type: none;
+	position: relative;
+	$size: 160px;
+
+
+	.menu-item {
+		height: $size;
+		width: $size;
+		background: orange;
+		position: relative;
+
+
+		display: table;
+		float: left;
+		margin-right: 80px;
+		border: 1px solid $silver;
+
+		$colors: $dark-pewter, $slate, $pale-olive, $darker-slate;
+		$index: 0;
+		@for $i from 1 through length($colors) {
+			$color: nth($colors, $i);
+			$number: length($colors);
+			$index: $index+1;
+			&:nth-child(#{$number}n+#{$i}) {
+
+				background-color: lighten($color, 20%);
+
+				&:before {
+					background-color: lighten($color, 10%);
+				}
+				&:after {
+					background-color: $color;
+					@include transition(background-color 0.5s linear)
+				}
+
+				&:hover:after{
+					background-color: invert($color);
+				}
+
+			}
+
+		}
+
+		&:before, &:after{
+			height: $size;
+			width: $size;
+			content:"";
+			position: absolute;
+			border: 1px solid $silver;
+		}
+
+		&:before {
+			/* Rotate */
+			@include rotate(30deg);
+		}
+
+		&:after {
+			left: 0;
+			@include rotate(-30deg);
+		}
+	}
+
+	a {
+
+		display: table-cell;
+		text-align: center;
+		vertical-align: middle;
+		font-family: $baseFontFamily;
+		font-weight: bold;
+		font-size: 20px;
+		color: $white;
+		position: relative;
+		z-index: 10;
+
+		//@include transition(color 0.5s linear);
+
+		&:hover {
+			color: $slate;
+		}
+		&:visited{
+			color: $white;
+		}
+
 	}
 
 }
