@@ -1219,7 +1219,7 @@ WORKSHOPS STYLES
 
 	.workshop-list-item {
 
-		@extend .fivecol;
+		@extend .sixcol;
 		height: 150px;
 		font-family: $baseFontFamily;
 		text-align: center;
@@ -1263,6 +1263,20 @@ WORKSHOPS STYLES
 
 	}
 
+}
+
+/*********************
+TRAINING PROGRAMS STYLES
+*********************/
+
+.training-programs-gallery {
+	list-style-type: none;
+
+	li{
+		float: left;
+		margin-top: 3px;
+		margin-right: 3px;
+	}
 }
 
 /*********************

@@ -84,7 +84,7 @@
 
                 <?php endwhile; ?>
 
-                    <a href="<?php echo get_category_link( get_cat_ID( 'news' ) ); ?> " class="btn btn-primary"><?php echo _('Read All'); ?> </a>
+                    <a href="<?php echo get_category_link( get_cat_ID( 'news' ) ); ?> "><?php echo _('Read All'); ?> &nbsp;<i class="fa fa-angle-double-right"></i> </a>
 
                 <?php else : ?>
 
@@ -228,7 +228,18 @@
             <div class="twelvecol">
                 <h1 class="section-heading"><?php echo _('Workshops'); ?></h1>
             </div>
-            <div class="sixcol first">
+
+            <?php query_posts('name=workshops'); ?>
+            <?php while (have_posts()) : the_post(); ?>
+
+                <div class="sixcol first">
+                    <p><?php the_content(); ?></p>
+                </div>
+
+            <?php endwhile;?>
+            <?php wp_reset_query(); ?>
+
+            <div class="sixcol">
                 <?php $defaults =
                     array(
                         'theme_location' => 'Training programs Menu',
@@ -238,15 +249,6 @@
                     );
                 wp_nav_menu($defaults); ?>
             </div>
-            <?php query_posts('name=workshops'); ?>
-            <?php while (have_posts()) : the_post(); ?>
-
-                <div class="sixcol">
-                    <p><?php the_content(); ?></p>
-                </div>
-
-            <?php endwhile;?>
-            <?php wp_reset_query(); ?>
 
         </div>
     </div>
@@ -257,22 +259,32 @@
                 <h1 class="section-heading"><?php echo _('Training programs') ?></h1>
 
             </div>
-            <div class="fivecol first">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vestibulum in magna in nibh accumsan adipiscing ut eu leo.
-                Aenean eu ipsum adipiscing, gravida mi scelerisque, faucibus nisi.
-                Sed id luctus lorem. Duis ultricies, ligula non euismod mattis,
-                sapien neque cursus mi, vel vulputate nibh metus in eros.
-                Etiam ut felis sit amet nunc posuere malesuada.
-                Phasellus eleifend orci et vestibulum porttitor.
-                Quisque pellentesque sem nulla, quis eleifend est suscipit ac.
-                Cras vitae ante mauris. Integer eleifend dictum nisi adipiscing pharetra.
-                Donec sed fermentum quam.
+
+            <div class="sevencol first">
+                
+                <ul class="training-programs-gallery clearfix">
+                    <li>
+                        <img src="http://lorempixel.com/380/240/city/" alt=""/>
+                    </li>
+                    <li>
+                        <img src="http://lorempixel.com/240/120/city/" alt=""/>
+                    </li>
+                    <li>
+                        <img src="http://lorempixel.com/240/120/city/" alt=""/>
+                    </li>
+                </ul>
+
             </div>
 
-            <div class="sevencol">
+            <?php query_posts('name=training-programs'); ?>
+            <?php while (have_posts()) : the_post(); ?>
 
-            </div>
+                <div class="fivecol">
+                    <p><?php the_content(); ?></p>
+                </div>
+
+            <?php endwhile;?>
+            <?php wp_reset_query(); ?>
         </div>
 
 

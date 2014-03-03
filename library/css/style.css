@@ -7736,6 +7736,16 @@ WORKSHOPS STYLES
       font-weight: bold; }
 
 /*********************
+TRAINING PROGRAMS STYLES
+*********************/
+.training-programs-gallery {
+  list-style-type: none; }
+  .training-programs-gallery li {
+    float: left;
+    margin-top: 3px;
+    margin-right: 3px; }
+
+/*********************
 TAGCLOUD STYLES
 *********************/
 .tagcloud .tag-link-13,
@@ -8300,11 +8310,11 @@ you can add resource intensive styles.
     width: 31.491712705%; }
 
   /* 30.75%; } /* grid_4  */
-  .fivecol, .workshop-link-list .workshop-list-item {
+  .fivecol {
     width: 40.055248616%; }
 
   /* 39.45%; } /* grid_5  */
-  .sixcol {
+  .sixcol, .workshop-link-list .workshop-list-item {
     width: 48.618784527%; }
 
   /* 48%;    } /* grid_6  */
@@ -8332,7 +8342,7 @@ you can add resource intensive styles.
     width: 99.999999993%; }
 
   /* 100%;   } /* grid_12 */
-  .onecol, .twocol, .threecol, #content::before, .fourcol, .fivecol, .workshop-link-list .workshop-list-item, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
+  .onecol, .twocol, .threecol, #content::before, .fourcol, .fivecol, .sixcol, .workshop-link-list .workshop-list-item, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
     position: relative;
     float: left;
     margin-left: 2.762430939%; }
