@@ -5,8 +5,17 @@
 					<nav role="navigation">
 							<?php bones_footer_links(); ?>
 					</nav>
+                    <div class="source-org copyright threecol pull-right">
+                        <img src="<?php echo get_template_directory_uri() ?>/library/images/cc-icons.png"
+                             alt="CC Icon" class="cc-icons"/>
+                        <p class="cc-text">
+                         <?php echo _('
+                            Except where otherwise noted, content on this site is licensed under a
+                            Creative Commons Attribution 4.0 International license.
+                        '); ?>
+                        </p>
+                    </div>
 
-					<p class="source-org copyright"><?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
 
 				</div>
 
@@ -21,6 +30,9 @@
 		<script>
 			SOO.Homepage.init();
 		</script>
+
+        <?php include_once('analyticstracking.php') ?>
+
 	</body>
 
 </html>

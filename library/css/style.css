@@ -7937,6 +7937,11 @@ FOOTER STYLES
   margin: 0;
   padding: 20px 0;
   color: #ccc; }
+  .footer img.cc-icons {
+    margin: 20px 0; }
+  .footer p.cc-text {
+    font-size: 12px;
+    line-height: 20px; }
 
 /*
 if you checked out the link above:
