@@ -7945,6 +7945,9 @@ FOOTER STYLES
   .footer p.cc-text {
     font-size: 12px;
     line-height: 20px; }
+  .footer .nav a:hover {
+    color: #cccccc;
+    background-color: #333333; }
 
 /*
 if you checked out the link above:

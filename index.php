@@ -28,6 +28,7 @@
                 </div>
 
             <?php endwhile;?>
+            <?php wp_reset_query(); ?>
         </div>
 
     </div>
@@ -100,6 +101,7 @@
                     </article>
 
                 <?php endif; ?>
+                <?php wp_reset_query(); ?>
 
             </div>
 
@@ -183,6 +185,8 @@
                 <?php endwhile;?>
             <?php endif; ?>
 
+            <?php wp_reset_query(); ?>
+
         </div>
 
     </div>
@@ -211,6 +215,7 @@
                 </div>
 
             <?php endwhile;?>
+            <?php wp_reset_query(); ?>
 
         </div>
     </div>

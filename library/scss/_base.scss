@@ -1731,6 +1731,13 @@ FOOTER STYLES
 		line-height: 20px;
 
 	}
+
+	.nav{
+		a:hover {
+			color: $silver;
+			background-color: #333333;
+		}
+	}
 }
 
 /*

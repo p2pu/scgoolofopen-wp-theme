@@ -57,10 +57,9 @@
 
 		<div class="navbar-inner">
 
-            <?php
-            if ( is_home() ) {?>
-                <div class="wrap"><?php
-            }?>
+
+            <div class="<?php echo is_home()?'wrap': ''; ?>">
+
 
 				<a class="navbar-btn visible-phone visible-tablet" data-toggle="collapse" data-target=".nav-collapse"
 				   href="#main-menu-panel">
@@ -78,10 +77,8 @@
 					'menu_class' => 'nav visible-desktop visible-tablet'
 				)); ?>
 
-        <?php
-        if ( is_home() ) {?>
-        </div><?php
-        }?>
+
+        </div>
             <ul class="logos nav pull-right nav-collapse collapse mindevices-side-menu hidden-phone hidden-tablet">
                 <li>
                     <a href="https://p2pu.org/en/">
