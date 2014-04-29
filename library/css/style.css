@@ -7562,8 +7562,9 @@ PEOPLE STYLES
   display: block; }
 .community img {
   width: 100px;
+  height: 100px;
   box-shadow: 0 0 0 2px white, 0 0 0 5px #515665;
-  margin: 0 5px; }
+  margin: 5px 5px; }
 .community .popover {
   background-color: #515665;
   color: white;

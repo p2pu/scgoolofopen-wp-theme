@@ -261,6 +261,7 @@
             </div>
 
             <div class="sevencol first">
+                <?php echo get_post_gallery(); ?>
                 
                 <ul class="training-programs-gallery clearfix">
                     <li>

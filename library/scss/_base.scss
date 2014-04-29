@@ -1086,9 +1086,10 @@ PEOPLE STYLES
 
 	img {
 		width: 100px;
+		height: 100px;
 		@extend .img-circle;
 		box-shadow: 0 0 0 2px $white, 0 0 0 5px $slate;
-		margin: 0 5px;
+		margin: 5px 5px;
 
 	}
 
