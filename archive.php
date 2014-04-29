@@ -54,7 +54,7 @@
                                     get_permalink( $id )
                                 );
                                 if ( is_user_logged_in() ) {
-                                    echo '<a href="' . get_edit_post_link( $id, $context ) . '"><small>[EDIT]</small></a>';
+                                    echo '<a href="' . get_edit_post_link( $id ) . '"><small>[EDIT]</small></a>';
                                 }
                             ?></p>
 
