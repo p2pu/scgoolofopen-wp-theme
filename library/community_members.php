@@ -125,7 +125,7 @@ function pippin_taxonomy_edit_meta_field($term)
                 }?>
 
             </select>
-            <p class="description"><?php _e('Enter a Twitter hook of a member'); ?></p>
+            <p class="description"><?php _e('Select a community group to which this user belongs to'); ?></p>
         </td>
     </tr><?php
     }?>
@@ -172,7 +172,7 @@ function coummunity_section()
         'singular_name' => _x('Community', 'Post Type Singular Name', 'text_domain'),
         'menu_name' => __('Community', 'text_domain'),
         'parent_item_colon' => __('Previous Community List:', 'text_domain'),
-        'all_items' => __('Community List', 'text_domain'),
+        'all_items' => __('Community Lists', 'text_domain'),
         'view_item' => __('View Community List', 'text_domain'),
         'add_new_item' => __('Add New Community List', 'text_domain'),
         'add_new' => __('Add Community List', 'text_domain'),
@@ -215,6 +215,14 @@ function coummunity_section()
 
 // Hook into the 'init' action
 add_action('init', 'coummunity_section', 0);
+
+function remove_unecessary_coummunity_admin_menus() {
+	remove_submenu_page( 'edit.php?post_type=coummunity', 'post-new.php?post_type=coummunity' );
+}
+
+// Hook into the 'init' action
+add_action( 'admin_menu', 'remove_unecessary_coummunity_admin_menus', 999 );
+
 
 function my_admin_scripts() {
     wp_enqueue_script('media-upload');

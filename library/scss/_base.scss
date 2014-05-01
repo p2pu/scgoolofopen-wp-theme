@@ -797,7 +797,12 @@ POSTS & CONTENT STYLES
 
 .archive-title {
 }
-
+.article-header {
+    h1{
+      margin-top: 0;
+      margin-bottom: 35px;
+    }
+}
 /* want to style individual post classes? Booya! */
 .post-id {
 }

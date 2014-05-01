@@ -1,0 +1,57 @@
+/*********************
+COURSES STYLES
+*********************/
+.course-list-title{
+	h2{
+		margin-top: 0;
+	}
+}
+.course-list{
+	.course-thumbnail{
+		@extend .thumbnail;
+		width: 100%;
+		margin: 5px 0;
+		border-radius: 0;
+	}
+	.course-item{
+		margin: 5px 0;
+		padding: 15px;
+		background: #FFFFFF;
+		img{
+			float: left;
+			margin-right: 15px;
+			max-width: 200px;
+		}
+		.course-title{
+			margin-top: 0;
+			line-height: 20px;
+			margin-bottom: 20px;
+		}
+		.course-description {
+			padding-left: 220px;
+			color: #515665;
+		}
+
+		.course-status{
+			font-size: 0.9em;
+			font-style: italic;
+
+			i{
+				display: block;
+				text-align: center;
+				margin: 0 10px;
+				font-size: 20px;
+			}
+			.fa-ban{
+				color: #F00000;
+			}
+			.fa-check{
+				color: #01af0a;
+			}
+		}
+	}
+}
+
+.courses-notice{
+	margin-top: 50px;
+}
