@@ -16,62 +16,105 @@ Template Name: Courses Page
 
             <article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
-                <header class="article-header">
+                <section class="entry-content clearfix" itemprop="articleBody"><?php
+					// get courses
 
-                    <h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
+					$course_lists = get_posts(array('post_type' => 'course_list', 'orderby' => 'title', 'order' => 'ASC'));
+					foreach($course_lists as $course_list){
 
-                </header>
+						$courses = get_terms( 'courses', array( 'hide_empty' => 0 ) );
+						if ( !empty( $courses ) && !is_wp_error( $courses ) ){?>
+							<div class="course-list-title">
+								<h2 id="<?php echo $course_list->post_name; ?>"><?php echo $course_list->post_title; ?></h2>
+							</div>
+							<div class="course-list-description">
+								<?php echo $course_list->post_content; ?>
+							</div>
+							<div class="course-list"><?php
+							foreach ( $courses as $course ) {
+								$term_id = $course->term_id;
+								$course_version = get_tax_meta($term_id,'course_version');
+								//print_r($course_list->post_name);
+								if( $course_version == $course_list->post_name ){
+									$course_title = $course->name;
+									$course_url = get_tax_meta($term_id,'course_url');
+									$course_desc = $course->description;
+									$img_object = get_tax_meta($term_id,'course_image');
+									$signup = get_tax_meta($term_id,'course_status');
+									?>
+									<a href="<?php echo $course_url; ?>" class="course-thumbnail">
+										<div class="course-item clearfix">
+											<img src="<?php echo $img_object['src']; ?>" alt="<?php echo $course_title; ?> Cover Image"/>
+											<div class="course-description">
+												<h3 class="course-title"><?php echo $course_title; ?></h3>
 
-                <section class="entry-content clearfix" itemprop="articleBody">
-                    <?php
+												<div class="course-desc">
+													<?php echo $course_desc; ?>
+												</div>
+												<hr/>
+												<div class="course-status pull-right">
+													<i class="fa fa-<?php echo ($signup == 'closed')?'ban': 'check';?>"></i>
+													<?php echo _('Signup is '.$signup); ?>
+												</div>
+											</div>
+										</div>
+									</a><?php
+								}
 
-                    // check if the repeater field has rows of data
-                    if( have_rows('facilitated_courses') ):
+							}
+							echo "</div>";
+						}
+					}
 
-                        // loop through the rows of data
-                        while ( have_rows('facilitated_courses') ) : the_row();
+					/*
+					//print_r($course_lists);
+					$courses = get_terms( 'courses', array(
+						'orderby'    => 'course_list',
+						'hide_empty' => 0
+					) );
+					//print_r($courses);
+					if($courses) {?>
+						<div class="course-list"><?php
 
-                            // display a sub field value
-                            the_sub_field('course_name');
-                            the_sub_field('course_url');
-                            the_sub_field('course_image');
-                            the_sub_field('course_description');
-                            the_sub_field('signup_option');
+							foreach ($courses as $course) {
+								$term_id = $course->term_id;
+								$course_version = get_tax_meta($term_id,'course_version');
 
-                        endwhile;
+								if($course_version == 'facilitated-courses'){
+									$course_version = get_tax_meta($term_id,'course_version');
+									$course_title = $course->name;
+									$course_url = get_tax_meta($term_id,'course_url');
+									$course_desc = $course->description;
+									$img_object = get_tax_meta($term_id,'course_image');
+									$signup = get_tax_meta($term_id,'course_status');
+									?>
+									<a href="<?php echo $course_url; ?>" class="course-thumbnail">
+										<div class="course-item clearfix">
+											<img src="<?php echo $img_object['src']; ?>" alt="<?php echo $course_title; ?> Cover Image"/>
+											<div class="course-description">
+												<h3 class="course-title"><?php echo $course_title; ?></h3>
 
-                    else :
+												<div class="course-desc">
+													<?php echo $course_desc; ?>
+												</div>
+												<hr/>
+												<div class="pull-right"><?php echo _('Signup is '.$signup);?></div>
+											</div>
+										</div>
+									</a><?php
+							}
+						}?>
+						</div><?php
+					}*/
 
-                        // no rows found
+					?>
 
-                    endif;
 
-                    ?>
 
-                    <hr/>
-                    <?php
 
-                    // check if the repeater field has rows of data
-                    if( have_rows('stand_alone_courses') ):
-
-                        // loop through the rows of data
-                        while ( have_rows('stand_alone_courses') ) : the_row();
-
-                            // display a sub field value
-                            the_sub_field('course_name');
-                            the_sub_field('course_url');
-                            the_sub_field('course_image');
-                            the_sub_field('course_description');
-
-                        endwhile;
-
-                    else :
-
-                        // no rows found
-
-                    endif;
-
-                    ?>
+                    <div class="courses-notice">
+						<?php the_content(); ?>
+                    </div>
                 </section>
 
                 <footer class="article-footer">
