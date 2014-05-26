@@ -32,7 +32,9 @@ the other stylesheets. Remember, keep it light: Speed is Important.
 // importing P2PU Framework
 @import "p2pu-css-framework/sass-p2pu/init";
 
-$logo-green: #27AE60;
+//import soo variables
+@import "variables";
+
 // styles in base.scss
 @import "base";
 @import "courses";
