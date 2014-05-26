@@ -9,7 +9,7 @@
 
             <div class="threecol first">
 
-                <img src="<?php echo get_template_directory_uri() ?>/library/images/soo-logo-new-260x260.png"
+                <img src="<?php echo get_template_directory_uri() ?>/library/images/SOO-logo.png"
                      alt="SOO Logo"/>
 
             </div>

@@ -303,7 +303,7 @@ HEADER STYLES
 		background: #05c6b4;
 	}
 
-	::after {
+	&::after {
 		left: 75%;
 		background: #ffbc1a;
 	}
@@ -534,7 +534,7 @@ ACTIONS STYLES
 	li {
 		height: 350px;
 		margin-left: 20px;
-		border: 1px solid darken(#98C807, 10%);
+		border: 1px solid darken($logo-green, 10%);
 		position: relative;
 		padding: 10px;
 		background-color: $white;
@@ -604,7 +604,7 @@ ACTIONS STYLES
 			color: $white;
 			position: absolute;
 			bottom: 0;
-			background-color: #98C807;
+			background-color: $logo-green;
 			padding: 20px;
 			width: 100%;
 			left: 0;
@@ -612,7 +612,7 @@ ACTIONS STYLES
 			@include transition(all 0.5s linear);
 
 			&:hover {
-				background-color: darken(#98C807, 10%);
+				background-color: darken($logo-green, 10%);
 				color: $white;
 			}
 
@@ -1234,7 +1234,7 @@ WORKSHOPS STYLES
 		display: table;
 		padding: 10px;
 
-		$colors: $apricot, $olive, $cyan, $clemintine;
+		$colors: $apricot, $logo-green, $cyan, $clemintine;
 		$index: 0;
 
 		@for $i from 1 through length($colors) {
