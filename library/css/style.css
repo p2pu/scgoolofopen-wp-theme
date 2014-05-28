@@ -7286,7 +7286,7 @@ ACTIONS STYLES
   .actions li {
     height: 350px;
     margin-left: 20px;
-    border: 1px solid #1e8449;
+    border: 1px solid #8ba200;
     position: relative;
     padding: 10px;
     background-color: white; }
@@ -7322,7 +7322,7 @@ ACTIONS STYLES
       color: white;
       position: absolute;
       bottom: 0;
-      background-color: #27ae60;
+      background-color: #b7d500;
       padding: 20px;
       width: 100%;
       left: 0;
@@ -7332,7 +7332,7 @@ ACTIONS STYLES
       -o-transition: all 0.5s linear;
       transition: all 0.5s linear; }
       .actions li a:hover {
-        background-color: #1e8449;
+        background-color: #8ba200;
         color: white; }
 
 /*********************
@@ -7701,7 +7701,7 @@ WORKSHOPS STYLES
       .workshop-link-list .workshop-list-item:nth-child(4n+1):hover {
         background-color: gray; }
     .workshop-link-list .workshop-list-item:nth-child(4n+2) {
-      background-color: #27ae60;
+      background-color: #b7d500;
       -webkit-transition: background-color 0.5s linear;
       -moz-transition: background-color 0.5s linear;
       -o-transition: background-color 0.5s linear;
