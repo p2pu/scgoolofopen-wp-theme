@@ -37,7 +37,7 @@
 
 	<?php // wordpress head functions ?>
 	<?php wp_head(); ?>
-	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/library/css/jquery.sidr.dark.css">
 	<?php // end of wordpress head ?>
 

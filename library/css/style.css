@@ -8614,14 +8614,16 @@ you can add resource intensive styles.
   *********************/
   .invitation .invitation-button {
     float: right !important; }
-    .invitation .invitation-button a {
-      background-image: url("../images/get-involved-discussion.png");
-      background-position: 35px 50%;
-      background-repeat: no-repeat; }
-    .invitation .invitation-button.create a {
-      background-image: url("../images/get-involved-create.png"); }
-    .invitation .invitation-button.involve a {
-      background-image: url("../images/get-involved-involve.png"); }
+    .invitation .invitation-button a:before {
+      font-family: 'FontAwesome';
+      content: "\f0e6";
+      position: absolute;
+      left: 34px;
+      font-size: 66px; }
+    .invitation .invitation-button.create a:before {
+      content: "\f19d"; }
+    .invitation .invitation-button.involve a:before {
+      content: "\f028"; }
 
   .sidebar .social-icon {
     font-size: 50px; } }

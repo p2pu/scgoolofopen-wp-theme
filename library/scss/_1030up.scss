@@ -34,19 +34,21 @@ INVITATION BUTTONS
 	.invitation-button {
 		float: right !important;
 
-		a {
+		a:before {
 
-			background-image: url("../images/get-involved-discussion.png");
-			background-position: 35px 50%;
-			background-repeat: no-repeat;
+          font-family: 'FontAwesome';
+          content: "\f0e6";
+          position: absolute;
+          left: 34px;
+          font-size: 66px;
 		}
 
-		&.create a {
-			background-image: url("../images/get-involved-create.png");
+		&.create a:before {
+          content: "\f19d"
 		}
 
-		&.involve a {
-			background-image: url("../images/get-involved-involve.png");
+		&.involve a:before {
+          content: "\f028";
 		}
 	}
 
