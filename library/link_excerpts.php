@@ -14,7 +14,7 @@ function keep_my_links($text) {
 		if (str_word_count($text, 0) > $excerpt_length) {
 			$words = str_word_count($text, 2);
 			$pos = array_keys($words);
-			$text = substr($text, 0, $pos[$excerpt_length]) . '...  <a href="'. get_permalink($post->ID) .'">' . __('Countinue reading') . ' &raquo;</a>';
+			$text = substr($text, 0, $pos[$excerpt_length]) . get_permalink($post->ID) .'">' . __('Countinue reading') . ' &raquo;</a>';
 		}
 	}
 	return $text;
